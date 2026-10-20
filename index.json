@@ -222,7 +222,7 @@
       "version": "0.9.12",
       "path": "assets/neurocenter-bridge/0.9.12/asset.json",
       "sha256": "df571c6953ac23385479c049cae6c1a6864b6f54f74510e4a56745052265aaf0",
-      "current": true
+      "current": false
     },
     {
       "id": "mcp-opencode-rag",
@@ -238,6 +238,14 @@
       "version": "2.4.4-plugin.pack.9",
       "path": "assets/plugin-opencode-rag-plugin/2.4.4-plugin.pack.9/asset.json",
       "sha256": "3bb2d420442ec184cb04edb6d7b4a6f828ca2b18895dc357b7c5f31c518a03b0",
+      "current": true
+    },
+    {
+      "id": "neurocenter-bridge",
+      "kind": "bridge",
+      "version": "0.9.13",
+      "path": "assets/neurocenter-bridge/0.9.13/asset.json",
+      "sha256": "adb31139414497eb4bd6958f32a26f908905e6cef899b695436a7f3d82dc435e",
       "current": true
     }
   ],
