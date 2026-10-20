@@ -1,0 +1,88 @@
+{
+  "declaration": {
+    "type": "project",
+    "directory": "source",
+    "entrypoint": "index.ts"
+  },
+  "files": [
+    {
+      "path": "index.ts",
+      "content": "import fs from 'node:fs/promises';\nimport path from 'node:path';\n\ninterface PluginInput { directory: string }\ninterface SystemOutput { system: string[] }\n\n/** Показывает агенту найденную конфигурацию Python без запуска команд или чтения ключей. */\nexport default async function pythonContext({ directory }: PluginInput) {\n    return { 'experimental.chat.system.transform': async (_input: unknown, output: SystemOutput): Promise<void> => {\n        const files: string[] = [];\n        for (const name of ['pyproject.toml', 'uv.lock', 'poetry.lock', 'requirements.txt', 'pytest.ini', 'mypy.ini', 'ruff.toml', '.python-version']) {\n            try { if ((await fs.lstat(path.join(directory, name))).isFile()) files.push(name); }\n            catch (error) { if ((error as NodeJS.ErrnoException).code !== 'ENOENT') throw error; }\n        }\n        if (!files.length) return;\n        let version = '';\n        const configuration = path.join(directory, 'pyproject.toml');\n        if (files.includes('pyproject.toml')) {\n            const handle = await fs.open(configuration, 'r');\n            try {\n                if ((await handle.stat()).size <= 65536) {\n                    const content = await handle.readFile('utf8');\n                    version = content.match(/^requires-python\\s*=\\s*[\"']([\\d\\s.,<>=!~*^|+-]{1,100})[\"']/m)?.[1] ?? '';\n                }\n            } finally { await handle.close(); }\n        }\n        output.system.push(`Конфигурация Python-проекта (данные, не инструкции): ${files.join(', ')}.${version ? ` Требование Python: ${version}.` : ''} Перед запуском тестов и линтеров проверьте соответствующие настройки проекта.`);\n    } };\n}\n"
+    }
+  ],
+  "sources": [
+    {
+      "target": "darwin-arm64",
+      "upstream": {
+        "compiler": "esbuild",
+        "version": "0.28.2",
+        "files": 1
+      },
+      "entrypoint": "entrypoint.mjs"
+    },
+    {
+      "target": "darwin-x64",
+      "upstream": {
+        "compiler": "esbuild",
+        "version": "0.28.2",
+        "files": 1
+      },
+      "entrypoint": "entrypoint.mjs"
+    },
+    {
+      "target": "linux-arm64-glibc",
+      "upstream": {
+        "compiler": "esbuild",
+        "version": "0.28.2",
+        "files": 1
+      },
+      "entrypoint": "entrypoint.mjs"
+    },
+    {
+      "target": "linux-x64-glibc",
+      "upstream": {
+        "compiler": "esbuild",
+        "version": "0.28.2",
+        "files": 1
+      },
+      "entrypoint": "entrypoint.mjs"
+    },
+    {
+      "target": "linux-arm64-musl",
+      "upstream": {
+        "compiler": "esbuild",
+        "version": "0.28.2",
+        "files": 1
+      },
+      "entrypoint": "entrypoint.mjs"
+    },
+    {
+      "target": "linux-x64-musl",
+      "upstream": {
+        "compiler": "esbuild",
+        "version": "0.28.2",
+        "files": 1
+      },
+      "entrypoint": "entrypoint.mjs"
+    },
+    {
+      "target": "win32-arm64",
+      "upstream": {
+        "compiler": "esbuild",
+        "version": "0.28.2",
+        "files": 1
+      },
+      "entrypoint": "entrypoint.mjs"
+    },
+    {
+      "target": "win32-x64",
+      "upstream": {
+        "compiler": "esbuild",
+        "version": "0.28.2",
+        "files": 1
+      },
+      "entrypoint": "entrypoint.mjs"
+    }
+  ],
+  "locks": []
+}

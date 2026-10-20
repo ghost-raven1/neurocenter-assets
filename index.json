@@ -207,6 +207,14 @@
       "path": "assets/model-vision-qwen3-vl-2b/models-2026-10-19.1/asset.json",
       "sha256": "9cd12897cd970f12db9f7d07d921c87c5a8e204161fcddbf2f917cbfed37ffa7",
       "current": true
+    },
+    {
+      "id": "plugin-python-context",
+      "kind": "plugin",
+      "version": "1.0.0",
+      "sha256": "46f9c50165a8cc922f7311d950b7cbd2a42dddb2821ed05e4fec8c258acc7bcb",
+      "path": "assets/plugin-python-context/1.0.0/asset.json",
+      "current": true
     }
   ],
   "schemaVersion": 1

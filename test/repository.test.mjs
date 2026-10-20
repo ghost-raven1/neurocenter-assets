@@ -11,6 +11,7 @@ const execute=promisify(execFile),root=fileURLToPath(new URL('../',import.meta.u
 async function fixture(t) {
   const directory=await fs.mkdtemp(path.join(os.tmpdir(),'neurocenter assets '));t.after(()=>fs.rm(directory,{recursive:true,force:true}));
   await fs.cp(path.join(root,'assets'),path.join(directory,'assets'),{recursive:true});await fs.copyFile(path.join(root,'index.json'),path.join(directory,'index.json'));
+  await fs.cp(path.join(root,'recipes'),path.join(directory,'recipes'),{recursive:true});
   return directory;
 }
 test('Репозиторий читается из cwd с пробелами, validate и preview не меняют файлы',async t=>{
@@ -39,7 +40,7 @@ test('Hardlink и неверный UTF-8 не маскируются под об
 });
 test('Pinned recipe проверяется до появления готового результата',async t=>{
   const directory=await fixture(t),loaded=await loadRepository(directory),entry=loaded.index.assets[0],record=loaded.assets[0];
-  await fs.mkdir(path.join(directory,'recipes'));await fs.writeFile(path.join(directory,'recipes/tool.json'),'{}\n');
+  await fs.mkdir(path.join(directory,'recipes'),{recursive:true});await fs.writeFile(path.join(directory,'recipes/tool.json'),'{}\n');
   record.asset.recipe={path:'recipes/tool.json',sha256:assetDigest('{}\n')};
   const bytes=serializeAsset(record.asset);entry.sha256=assetDigest(bytes);await fs.writeFile(path.join(directory,entry.path),bytes);await fs.writeFile(path.join(directory,'index.json'),JSON.stringify(loaded.index));
   assert.equal((await loadRepository(directory)).assets.length,loaded.assets.length);

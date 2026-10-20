@@ -31,7 +31,7 @@ try {
   for(const {asset}of repository.assets) {
     if(['mcp','plugin'].includes(asset.kind)) {
       const native=toToolPublication(asset),publication=validatePublication(native);
-      const rebuilt=createToolAsset({id:asset.id,version:asset.version,source:asset.source,license:asset.license,publication:native,artifacts:asset.delivery.artifacts});
+      const rebuilt=createToolAsset({id:asset.id,version:asset.version,source:asset.source,license:asset.license,publication:native,artifacts:asset.delivery.artifacts,recipe:asset.recipe});
       assert.deepEqual(rebuilt,asset,'Tool producer/consumer roundtrip changed bytes or fields');
       assert.deepEqual(normalizeRuntimeArtifacts(publication.config.extra.runtimeArtifacts),normalizeRuntimeArtifacts(asset.delivery.artifacts.map(item=>item.descriptor)));
       const pkg=buildPackage({id:'ai-plug-contract-'+asset.id,name:publication.name,kind:asset.kind,version:1},publication.files,'2026-10-20T00:00:00Z',publication.config);
@@ -63,7 +63,7 @@ try {
   const native={kind:'mcp',id:nativeChild.id,version:1,manifest:childPackage.manifest.sha256};
   const context={dependencies:[{...parent.dependencies[0],kind:'mcp',native}]},publication=validatePublication(toToolPublication(parent,context));
   assert.deepEqual(publication.dependencies,[native]);
-  const exported=createToolAsset({id:parent.id,version:parent.version,source:parent.source,license:parent.license,publication,artifacts:parent.delivery.artifacts,dependencies:parent.dependencies,resolvedDependencies:context});
+  const exported=createToolAsset({id:parent.id,version:parent.version,source:parent.source,license:parent.license,publication,artifacts:parent.delivery.artifacts,dependencies:parent.dependencies,resolvedDependencies:context,recipe:parent.recipe});
   assert.deepEqual(exported,parent);assert.equal(JSON.stringify(exported).includes(nativeChild.id),false);
   checked.push({id:parent.id,kind:'dependency-mapping',nativeManifestVerified:verifyPackage(childPackage)});
   if(validateModelDescriptor) {
