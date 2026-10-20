@@ -1,0 +1,23 @@
+{
+  "name": "neurocenter-workspace",
+  "private": true,
+  "dependencies": {
+    "@neurocenter/asset-contract": "https://codeload.github.com/ghost-raven1/neurocenter-assets/tar.gz/3cea243aa083802943235a0cbda64d7cb92126ca"
+  },
+  "scripts": {
+    "check": "node scripts/workspace/check.mjs",
+    "assets:init": "node scripts/assets/setup.mjs",
+    "assets:hooks": "node scripts/assets/setup.mjs --hooks-only",
+    "assets:sync": "node scripts/assets/cli.mjs",
+    "assets:verify": "node scripts/assets/cli.mjs --verify-only",
+    "update": "node scripts/assets/update.mjs",
+    "compose:install": "node scripts/install-compose.mjs",
+    "models:prepare": "node scripts/models/bundle-cli.mjs",
+    "models:verify": "node scripts/models/bundle-cli.mjs --verify-only",
+    "models:publish": "node scripts/models/publish-cli.mjs",
+    "bridge:prepare": "node scripts/prepare-bridge-runtimes.mjs",
+    "tools:build": "node scripts/catalog-plugins/run.mjs build",
+    "tools:publish": "node scripts/catalog-plugins/run.mjs publish",
+    "tools:check": "node scripts/catalog-plugins/run.mjs check"
+  }
+}

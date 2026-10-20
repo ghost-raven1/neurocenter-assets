@@ -17,7 +17,7 @@
       "version": "1.0.0-pack.1"
     },
     {
-      "current": true,
+      "current": false,
       "id": "neurocenter-bridge",
       "kind": "bridge",
       "path": "assets/neurocenter-bridge/0.9.10/asset.json",
@@ -174,7 +174,7 @@
       "kind": "mcp",
       "path": "assets/mcp-opencode-rag/2.4.4-mcp.pack.8/asset.json",
       "sha256": "1da6a236243342d29c4461d8614688bc072fbfa90218a538cd702b151a427cc9",
-      "current": true
+      "current": false
     },
     {
       "id": "plugin-opencode-rag-plugin",
@@ -182,7 +182,7 @@
       "kind": "plugin",
       "path": "assets/plugin-opencode-rag-plugin/2.4.4-plugin.pack.8/asset.json",
       "sha256": "7f6750251571082e6c498f4434f8cb80af7eb270a16f60bfefe65a2f57c3d283",
-      "current": true
+      "current": false
     },
     {
       "id": "plugin-opencode-snip",
@@ -214,6 +214,30 @@
       "version": "1.0.0",
       "sha256": "46f9c50165a8cc922f7311d950b7cbd2a42dddb2821ed05e4fec8c258acc7bcb",
       "path": "assets/plugin-python-context/1.0.0/asset.json",
+      "current": true
+    },
+    {
+      "id": "neurocenter-bridge",
+      "kind": "bridge",
+      "version": "0.9.12",
+      "path": "assets/neurocenter-bridge/0.9.12/asset.json",
+      "sha256": "df571c6953ac23385479c049cae6c1a6864b6f54f74510e4a56745052265aaf0",
+      "current": true
+    },
+    {
+      "id": "mcp-opencode-rag",
+      "kind": "mcp",
+      "version": "2.4.4-mcp.pack.9",
+      "path": "assets/mcp-opencode-rag/2.4.4-mcp.pack.9/asset.json",
+      "sha256": "74e1f28c4b843b22b24d4576a7ee53440440d570293930044368af594c16c89a",
+      "current": true
+    },
+    {
+      "id": "plugin-opencode-rag-plugin",
+      "kind": "plugin",
+      "version": "2.4.4-plugin.pack.9",
+      "path": "assets/plugin-opencode-rag-plugin/2.4.4-plugin.pack.9/asset.json",
+      "sha256": "3bb2d420442ec184cb04edb6d7b4a6f828ca2b18895dc357b7c5f31c518a03b0",
       "current": true
     }
   ],

@@ -1,0 +1,114 @@
+{
+  "schemaVersion": 1,
+  "status": "published-transport-byte-readback",
+  "checkedAt": "2026-10-20T17:08:57.513Z",
+  "asset": {
+    "id": "neurocenter-bridge",
+    "kind": "bridge",
+    "version": "0.9.12",
+    "descriptorSha256": "df571c6953ac23385479c049cae6c1a6864b6f54f74510e4a56745052265aaf0",
+    "descriptorBytes": 2453
+  },
+  "release": {
+    "repository": "ghost-raven1/neurocenter-assets",
+    "tag": "bridge-v0.9.12",
+    "url": "https://github.com/ghost-raven1/neurocenter-assets/releases/tag/bridge-v0.9.12",
+    "publishedAt": "2026-10-20T17:08:15Z",
+    "targetCommit": "2886e49c0d7871ac0167dedf448ea358de261494"
+  },
+  "readback": [
+    {
+      "url": "https://github.com/ghost-raven1/neurocenter-assets/releases/download/bridge-v0.9.12/neurocenter-bridge-0.9.12.asset.json",
+      "file": "neurocenter-bridge-0.9.12.asset.json",
+      "sha256": "df571c6953ac23385479c049cae6c1a6864b6f54f74510e4a56745052265aaf0",
+      "bytes": 2453,
+      "readbackVerified": true,
+      "cachePublished": true,
+      "existingCachePreserved": false
+    },
+    {
+      "url": "https://github.com/ghost-raven1/neurocenter-assets/releases/download/bridge-v0.9.12/neurocenter-asset-sync-darwin-arm64-0.9.12.tgz",
+      "file": "neurocenter-asset-sync-darwin-arm64-0.9.12.tgz",
+      "sha256": "cb511981adb400f062ddcce438dd6aa41f0f6e55c43c5ba18284dcfaefa0472c",
+      "bytes": 123071628,
+      "target": "darwin-arm64",
+      "readbackVerified": true,
+      "cachePublished": true,
+      "existingCachePreserved": false
+    },
+    {
+      "url": "https://github.com/ghost-raven1/neurocenter-assets/releases/download/bridge-v0.9.12/neurocenter-asset-sync-linux-x64-0.9.12.tgz",
+      "file": "neurocenter-asset-sync-linux-x64-0.9.12.tgz",
+      "sha256": "9cfaca864b9952d9fc4ca2f929fcbfb58610d5ded51439692abe5ced069ecf09",
+      "bytes": 203223792,
+      "target": "linux-x64",
+      "readbackVerified": true,
+      "cachePublished": true,
+      "existingCachePreserved": false
+    }
+  ],
+  "descriptorExactReleasedBytes": true,
+  "versionAssertions": [
+    "package.json",
+    "metadata.version",
+    "MCP server handshake version",
+    "status.bridgeVersion"
+  ],
+  "harnessSha256": "16d6c6585af16252cc093bce994959c32e3f06c39126d2e4a12297e03f3118bf",
+  "structurallyValidatedTargets": [
+    "darwin-arm64",
+    "linux-x64"
+  ],
+  "runtimeExecution": [
+    {
+      "target": "darwin-arm64",
+      "execution": "native darwin-arm64",
+      "checkedAt": "2026-10-20T17:06:54.967Z",
+      "cases": [
+        "Контрольная сумма готового автономного архива совпадает с манифестом",
+        "Встроенный runtime запускается без Node и npm в PATH",
+        "Регистрация автономного MCP сохраняет JSONC, другие MCP и повторяется без изменений",
+        "Реальный stdio MCP загружается из готового пакета и сообщает протокол, сборку и LanceDB",
+        "В артефакте отсутствуют старые команды небезопасной записи"
+      ],
+      "passed": true,
+      "nodeVersion": "24.22.0",
+      "buildId": "3842137533bfe006887891d2ca6f4cb94c5ccbad4ad74de3a07bcfa51e4e980a",
+      "archiveSha256": "cb511981adb400f062ddcce438dd6aa41f0f6e55c43c5ba18284dcfaefa0472c",
+      "temporaryProfileRemoved": true,
+      "realProfileChanged": false
+    },
+    {
+      "target": "linux-x64",
+      "execution": "linux-x64 in pinned linux/amd64 Docker container under x64 emulation on macOS arm64",
+      "checkedAt": "2026-10-20T17:07:00.492Z",
+      "cases": [
+        "Контрольная сумма готового автономного архива совпадает с манифестом",
+        "Встроенный runtime запускается без Node и npm в PATH",
+        "Регистрация автономного MCP сохраняет JSONC, другие MCP и повторяется без изменений",
+        "Реальный stdio MCP загружается из готового пакета и сообщает протокол, сборку и LanceDB",
+        "В артефакте отсутствуют старые команды небезопасной записи"
+      ],
+      "passed": true,
+      "nodeVersion": "24.22.0",
+      "buildId": "3842137533bfe006887891d2ca6f4cb94c5ccbad4ad74de3a07bcfa51e4e980a",
+      "archiveSha256": "9cfaca864b9952d9fc4ca2f929fcbfb58610d5ded51439692abe5ced069ecf09",
+      "temporaryProfileRemoved": true,
+      "realProfileChanged": false
+    }
+  ],
+  "previousVersion": {
+    "version": "0.9.10",
+    "descriptorSha256": "b55b7bf350c5fef45d39f5ed4b14e7f769a87dc0c98f987d4a39857636007c53",
+    "unchanged": true
+  },
+  "scope": {
+    "catalogImported": false,
+    "liveBridgeChanged": false,
+    "realProfileChanged": false,
+    "indexChanged": false,
+    "readmeChanged": false,
+    "committed": false,
+    "pushed": false
+  }
+}

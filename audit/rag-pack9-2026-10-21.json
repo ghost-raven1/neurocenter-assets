@@ -1,0 +1,852 @@
+{
+  "schemaVersion": 1,
+  "release": "rag-v2.4.4-pack.9",
+  "url": "https://github.com/ghost-raven1/neurocenter-assets/releases/tag/rag-v2.4.4-pack.9",
+  "targetCommit": "2886e49c0d7871ac0167dedf448ea358de261494",
+  "publishedAt": "2026-10-20T17:08:55Z",
+  "verifiedAt": "2026-10-20T17:10:04.446Z",
+  "httpsReadback": {
+    "files": [
+      {
+        "kind": "runtime",
+        "assetId": "mcp-opencode-rag",
+        "assetVersion": "2.4.4-mcp.pack.9",
+        "name": "mcp-opencode-rag-2.4.4-mcp.pack.9-darwin-arm64.tar.gz",
+        "url": "https://github.com/ghost-raven1/neurocenter-assets/releases/download/rag-v2.4.4-pack.9/mcp-opencode-rag-2.4.4-mcp.pack.9-darwin-arm64.tar.gz",
+        "sha256": "c3b9dc285aeb8ecf9e116a5513ae9555997572634575b31e3616d8ce383f30ae",
+        "bytes": 102158316,
+        "verified": true,
+        "cached": true,
+        "responses": [
+          {
+            "host": "github.com",
+            "status": 302
+          },
+          {
+            "host": "release-assets.githubusercontent.com",
+            "status": 200
+          }
+        ]
+      },
+      {
+        "kind": "runtime",
+        "assetId": "mcp-opencode-rag",
+        "assetVersion": "2.4.4-mcp.pack.9",
+        "name": "mcp-opencode-rag-2.4.4-mcp.pack.9-linux-arm64-glibc-musl.tar.gz",
+        "url": "https://github.com/ghost-raven1/neurocenter-assets/releases/download/rag-v2.4.4-pack.9/mcp-opencode-rag-2.4.4-mcp.pack.9-linux-arm64-glibc-musl.tar.gz",
+        "sha256": "25f6ff224aad3b6fd9cd2bce4f4a682c9341a55099a6c369d45ade436f1d13b8",
+        "bytes": 175849246,
+        "verified": true,
+        "cached": true,
+        "responses": [
+          {
+            "host": "github.com",
+            "status": 302
+          },
+          {
+            "host": "release-assets.githubusercontent.com",
+            "status": 200
+          }
+        ]
+      },
+      {
+        "kind": "runtime",
+        "assetId": "mcp-opencode-rag",
+        "assetVersion": "2.4.4-mcp.pack.9",
+        "name": "mcp-opencode-rag-2.4.4-mcp.pack.9-linux-x64-glibc-musl.tar.gz",
+        "url": "https://github.com/ghost-raven1/neurocenter-assets/releases/download/rag-v2.4.4-pack.9/mcp-opencode-rag-2.4.4-mcp.pack.9-linux-x64-glibc-musl.tar.gz",
+        "sha256": "dfe2ff7496bb3f7a5f1732548f6e1c260bc0b29c857f1b145bb7cafe8969669a",
+        "bytes": 182480922,
+        "verified": true,
+        "cached": true,
+        "responses": [
+          {
+            "host": "github.com",
+            "status": 302
+          },
+          {
+            "host": "release-assets.githubusercontent.com",
+            "status": 200
+          }
+        ]
+      },
+      {
+        "kind": "source",
+        "assetId": "mcp-opencode-rag",
+        "assetVersion": "2.4.4-mcp.pack.9",
+        "name": "mcp-opencode-rag-2.4.4-mcp.pack.9-source.json",
+        "url": "https://github.com/ghost-raven1/neurocenter-assets/releases/download/rag-v2.4.4-pack.9/mcp-opencode-rag-2.4.4-mcp.pack.9-source.json",
+        "sha256": "81f26b6da89b9c8ea52e9ed66c7a287a2471f2d32b0ea142cb54a977f60d3119",
+        "bytes": 1179984,
+        "verified": true,
+        "cached": true,
+        "responses": [
+          {
+            "host": "github.com",
+            "status": 302
+          },
+          {
+            "host": "release-assets.githubusercontent.com",
+            "status": 200
+          }
+        ]
+      },
+      {
+        "kind": "runtime",
+        "assetId": "mcp-opencode-rag",
+        "assetVersion": "2.4.4-mcp.pack.9",
+        "name": "mcp-opencode-rag-2.4.4-mcp.pack.9-win32-arm64.tar.gz",
+        "url": "https://github.com/ghost-raven1/neurocenter-assets/releases/download/rag-v2.4.4-pack.9/mcp-opencode-rag-2.4.4-mcp.pack.9-win32-arm64.tar.gz",
+        "sha256": "74569ad81c04f0ccf7bfed43e2fff5b219f53122371462257e01bde53f97a957",
+        "bytes": 107496469,
+        "verified": true,
+        "cached": true,
+        "responses": [
+          {
+            "host": "github.com",
+            "status": 302
+          },
+          {
+            "host": "release-assets.githubusercontent.com",
+            "status": 200
+          }
+        ]
+      },
+      {
+        "kind": "runtime",
+        "assetId": "mcp-opencode-rag",
+        "assetVersion": "2.4.4-mcp.pack.9",
+        "name": "mcp-opencode-rag-2.4.4-mcp.pack.9-win32-x64.tar.gz",
+        "url": "https://github.com/ghost-raven1/neurocenter-assets/releases/download/rag-v2.4.4-pack.9/mcp-opencode-rag-2.4.4-mcp.pack.9-win32-x64.tar.gz",
+        "sha256": "2df48cb9e07cdc4a17f246edbc1ebdf7864b511ef8ed2acfe9c4df899c6f518d",
+        "bytes": 113660409,
+        "verified": true,
+        "cached": true,
+        "responses": [
+          {
+            "host": "github.com",
+            "status": 302
+          },
+          {
+            "host": "release-assets.githubusercontent.com",
+            "status": 200
+          }
+        ]
+      },
+      {
+        "kind": "runtime",
+        "assetId": "plugin-opencode-rag-plugin",
+        "assetVersion": "2.4.4-plugin.pack.9",
+        "name": "plugin-opencode-rag-plugin-2.4.4-plugin.pack.9-darwin-arm64.tar.gz",
+        "url": "https://github.com/ghost-raven1/neurocenter-assets/releases/download/rag-v2.4.4-pack.9/plugin-opencode-rag-plugin-2.4.4-plugin.pack.9-darwin-arm64.tar.gz",
+        "sha256": "2d0ff4f458c54ec6310b870e84aeb177b8d3a406ae967e1a7acdae035d96eaf1",
+        "bytes": 111936084,
+        "verified": true,
+        "cached": true,
+        "responses": [
+          {
+            "host": "github.com",
+            "status": 302
+          },
+          {
+            "host": "release-assets.githubusercontent.com",
+            "status": 200
+          }
+        ]
+      },
+      {
+        "kind": "runtime",
+        "assetId": "plugin-opencode-rag-plugin",
+        "assetVersion": "2.4.4-plugin.pack.9",
+        "name": "plugin-opencode-rag-plugin-2.4.4-plugin.pack.9-linux-arm64-glibc-musl.tar.gz",
+        "url": "https://github.com/ghost-raven1/neurocenter-assets/releases/download/rag-v2.4.4-pack.9/plugin-opencode-rag-plugin-2.4.4-plugin.pack.9-linux-arm64-glibc-musl.tar.gz",
+        "sha256": "6613a306272f9f256545522fc7e411f29c67f513e243d497b1045f32ff018982",
+        "bytes": 185629845,
+        "verified": true,
+        "cached": true,
+        "responses": [
+          {
+            "host": "github.com",
+            "status": 302
+          },
+          {
+            "host": "release-assets.githubusercontent.com",
+            "status": 200
+          }
+        ]
+      },
+      {
+        "kind": "runtime",
+        "assetId": "plugin-opencode-rag-plugin",
+        "assetVersion": "2.4.4-plugin.pack.9",
+        "name": "plugin-opencode-rag-plugin-2.4.4-plugin.pack.9-linux-x64-glibc-musl.tar.gz",
+        "url": "https://github.com/ghost-raven1/neurocenter-assets/releases/download/rag-v2.4.4-pack.9/plugin-opencode-rag-plugin-2.4.4-plugin.pack.9-linux-x64-glibc-musl.tar.gz",
+        "sha256": "1f2bc951de072bf805d484cc6e9e98c787b34f056569ca363aa4ab6ef4beedf2",
+        "bytes": 192264540,
+        "verified": true,
+        "cached": true,
+        "responses": [
+          {
+            "host": "github.com",
+            "status": 302
+          },
+          {
+            "host": "release-assets.githubusercontent.com",
+            "status": 200
+          }
+        ]
+      },
+      {
+        "kind": "source",
+        "assetId": "plugin-opencode-rag-plugin",
+        "assetVersion": "2.4.4-plugin.pack.9",
+        "name": "plugin-opencode-rag-plugin-2.4.4-plugin.pack.9-source.json",
+        "url": "https://github.com/ghost-raven1/neurocenter-assets/releases/download/rag-v2.4.4-pack.9/plugin-opencode-rag-plugin-2.4.4-plugin.pack.9-source.json",
+        "sha256": "9cb9e86b684de5e620bdbb5dd697851e7b9e831798d49a985752d0e735ea7e3f",
+        "bytes": 1182490,
+        "verified": true,
+        "cached": true,
+        "responses": [
+          {
+            "host": "github.com",
+            "status": 302
+          },
+          {
+            "host": "release-assets.githubusercontent.com",
+            "status": 200
+          }
+        ]
+      },
+      {
+        "kind": "runtime",
+        "assetId": "plugin-opencode-rag-plugin",
+        "assetVersion": "2.4.4-plugin.pack.9",
+        "name": "plugin-opencode-rag-plugin-2.4.4-plugin.pack.9-win32-arm64.tar.gz",
+        "url": "https://github.com/ghost-raven1/neurocenter-assets/releases/download/rag-v2.4.4-pack.9/plugin-opencode-rag-plugin-2.4.4-plugin.pack.9-win32-arm64.tar.gz",
+        "sha256": "ba5e8337bc7bcec1c6c8b7968f098994c3391cef7e74fd2930891b911c95c13d",
+        "bytes": 117258046,
+        "verified": true,
+        "cached": true,
+        "responses": [
+          {
+            "host": "github.com",
+            "status": 302
+          },
+          {
+            "host": "release-assets.githubusercontent.com",
+            "status": 200
+          }
+        ]
+      },
+      {
+        "kind": "runtime",
+        "assetId": "plugin-opencode-rag-plugin",
+        "assetVersion": "2.4.4-plugin.pack.9",
+        "name": "plugin-opencode-rag-plugin-2.4.4-plugin.pack.9-win32-x64.tar.gz",
+        "url": "https://github.com/ghost-raven1/neurocenter-assets/releases/download/rag-v2.4.4-pack.9/plugin-opencode-rag-plugin-2.4.4-plugin.pack.9-win32-x64.tar.gz",
+        "sha256": "ad2ccea6132d5fb7821636f3a509ba77cdc6c519d432433271ef489b8b6672e9",
+        "bytes": 123546086,
+        "verified": true,
+        "cached": true,
+        "responses": [
+          {
+            "host": "github.com",
+            "status": 302
+          },
+          {
+            "host": "release-assets.githubusercontent.com",
+            "status": 200
+          }
+        ]
+      },
+      {
+        "kind": "audit",
+        "name": "rag-v2.4.4-pack.9-prepared-audit.json",
+        "url": "https://github.com/ghost-raven1/neurocenter-assets/releases/download/rag-v2.4.4-pack.9/rag-v2.4.4-pack.9-prepared-audit.json",
+        "sha256": "498cd2889b0a299b42a5a26b1bae809ee6fd27fc2e726bc682075652eefe8af1",
+        "bytes": 34474,
+        "verified": true,
+        "cached": false,
+        "responses": [
+          {
+            "host": "github.com",
+            "status": 302
+          },
+          {
+            "host": "release-assets.githubusercontent.com",
+            "status": 200
+          }
+        ]
+      }
+    ],
+    "totalBytes": 1414676911,
+    "verified": true,
+    "cachedRuntimeAndSourceFiles": 12
+  },
+  "sourceRetention": {
+    "files": 77,
+    "utf8Bytes": 1085986,
+    "format": "declaration+actual public files+upstream sources+locks",
+    "producerChangedDuringCapture": false
+  },
+  "producerValidation": {
+    "regressionPassed": 36,
+    "regressionFailed": 0,
+    "regressionSkipped": 0,
+    "isolatedPublicationValidatorRebuilt": true,
+    "retainedSourcesOnly": true,
+    "validPublicationAccepted": true,
+    "invalidEntrypointRejected": true
+  },
+  "retainedPayloads": {
+    "status": "passed",
+    "uniqueArchives": 10,
+    "results": [
+      {
+        "asset": "mcp-opencode-rag",
+        "archiveSha256": "c3b9dc285aeb8ecf9e116a5513ae9555997572634575b31e3616d8ce383f30ae",
+        "helpers": 16,
+        "sourceMatches": true
+      },
+      {
+        "asset": "mcp-opencode-rag",
+        "archiveSha256": "25f6ff224aad3b6fd9cd2bce4f4a682c9341a55099a6c369d45ade436f1d13b8",
+        "helpers": 16,
+        "sourceMatches": true
+      },
+      {
+        "asset": "mcp-opencode-rag",
+        "archiveSha256": "dfe2ff7496bb3f7a5f1732548f6e1c260bc0b29c857f1b145bb7cafe8969669a",
+        "helpers": 16,
+        "sourceMatches": true
+      },
+      {
+        "asset": "mcp-opencode-rag",
+        "archiveSha256": "74569ad81c04f0ccf7bfed43e2fff5b219f53122371462257e01bde53f97a957",
+        "helpers": 16,
+        "sourceMatches": true
+      },
+      {
+        "asset": "mcp-opencode-rag",
+        "archiveSha256": "2df48cb9e07cdc4a17f246edbc1ebdf7864b511ef8ed2acfe9c4df899c6f518d",
+        "helpers": 16,
+        "sourceMatches": true
+      },
+      {
+        "asset": "plugin-opencode-rag-plugin",
+        "archiveSha256": "2d0ff4f458c54ec6310b870e84aeb177b8d3a406ae967e1a7acdae035d96eaf1",
+        "helpers": 17,
+        "sourceMatches": true
+      },
+      {
+        "asset": "plugin-opencode-rag-plugin",
+        "archiveSha256": "6613a306272f9f256545522fc7e411f29c67f513e243d497b1045f32ff018982",
+        "helpers": 17,
+        "sourceMatches": true
+      },
+      {
+        "asset": "plugin-opencode-rag-plugin",
+        "archiveSha256": "1f2bc951de072bf805d484cc6e9e98c787b34f056569ca363aa4ab6ef4beedf2",
+        "helpers": 17,
+        "sourceMatches": true
+      },
+      {
+        "asset": "plugin-opencode-rag-plugin",
+        "archiveSha256": "ba5e8337bc7bcec1c6c8b7968f098994c3391cef7e74fd2930891b911c95c13d",
+        "helpers": 17,
+        "sourceMatches": true
+      },
+      {
+        "asset": "plugin-opencode-rag-plugin",
+        "archiveSha256": "ad2ccea6132d5fb7821636f3a509ba77cdc6c519d432433271ef489b8b6672e9",
+        "helpers": 17,
+        "sourceMatches": true
+      }
+    ]
+  },
+  "nativeExecution": {
+    "platform": "darwin-arm64",
+    "status": "passed",
+    "nodeVersion": "24.19.0",
+    "openCodeVersion": "1.14.48",
+    "otherTargets": "Archive SHA, full inventory, entrypoints and native binary headers verified; runtime execution not performed",
+    "externalProviderCalls": 0,
+    "actualCases": {
+      "mcpManagedReindex": 7,
+      "pluginManagedReindex": 7,
+      "pluginProfile": 5,
+      "openCodePlugin": 10,
+      "mcpCoreBridgeNativeRoundtrip": 1
+    },
+    "roundtrip": {
+      "test": "mcp/neurocenter-asset-sync/test/rag-native-roundtrip.test.ts",
+      "passed": 1,
+      "failed": 0
+    },
+    "reports": {
+      "staticInventory": {
+        "sha256": "fcfe466188dc4ef7fec43bd48dbd39bea33755b9cebd4213ebc57a528ce9978a",
+        "result": {
+          "status": "passed",
+          "kind": "static-platform-inventory",
+          "nativeExecution": "darwin-arm64 only; see native smoke",
+          "artifacts": [
+            {
+              "tool": "opencode-rag",
+              "compressedBytes": 102158316,
+              "entrypoint": "opencode-rag.mjs",
+              "filesCount": 7867,
+              "sha256": "c3b9dc285aeb8ecf9e116a5513ae9555997572634575b31e3616d8ce383f30ae",
+              "target": "darwin-arm64",
+              "unpackedBytes": 300256449
+            },
+            {
+              "tool": "opencode-rag",
+              "compressedBytes": 175849246,
+              "entrypoint": "opencode-rag.mjs",
+              "filesCount": 7886,
+              "sha256": "25f6ff224aad3b6fd9cd2bce4f4a682c9341a55099a6c369d45ade436f1d13b8",
+              "target": "linux-arm64-glibc",
+              "unpackedBytes": 484594762
+            },
+            {
+              "tool": "opencode-rag",
+              "compressedBytes": 175849246,
+              "entrypoint": "opencode-rag.mjs",
+              "filesCount": 7886,
+              "sha256": "25f6ff224aad3b6fd9cd2bce4f4a682c9341a55099a6c369d45ade436f1d13b8",
+              "target": "linux-arm64-musl",
+              "unpackedBytes": 484594762
+            },
+            {
+              "tool": "opencode-rag",
+              "compressedBytes": 182480922,
+              "entrypoint": "opencode-rag.mjs",
+              "filesCount": 7886,
+              "sha256": "dfe2ff7496bb3f7a5f1732548f6e1c260bc0b29c857f1b145bb7cafe8969669a",
+              "target": "linux-x64-glibc",
+              "unpackedBytes": 523429628
+            },
+            {
+              "tool": "opencode-rag",
+              "compressedBytes": 182480922,
+              "entrypoint": "opencode-rag.mjs",
+              "filesCount": 7886,
+              "sha256": "dfe2ff7496bb3f7a5f1732548f6e1c260bc0b29c857f1b145bb7cafe8969669a",
+              "target": "linux-x64-musl",
+              "unpackedBytes": 523429628
+            },
+            {
+              "tool": "opencode-rag",
+              "compressedBytes": 107496469,
+              "entrypoint": "opencode-rag.mjs",
+              "filesCount": 7863,
+              "sha256": "74569ad81c04f0ccf7bfed43e2fff5b219f53122371462257e01bde53f97a957",
+              "target": "win32-arm64",
+              "unpackedBytes": 328170300
+            },
+            {
+              "tool": "opencode-rag",
+              "compressedBytes": 113660409,
+              "entrypoint": "opencode-rag.mjs",
+              "filesCount": 7864,
+              "sha256": "2df48cb9e07cdc4a17f246edbc1ebdf7864b511ef8ed2acfe9c4df899c6f518d",
+              "target": "win32-x64",
+              "unpackedBytes": 361724751
+            },
+            {
+              "tool": "opencode-rag-plugin",
+              "compressedBytes": 111936084,
+              "entrypoint": "rag-plugin.mjs",
+              "filesCount": 11247,
+              "sha256": "2d0ff4f458c54ec6310b870e84aeb177b8d3a406ae967e1a7acdae035d96eaf1",
+              "target": "darwin-arm64",
+              "unpackedBytes": 351109393
+            },
+            {
+              "tool": "opencode-rag-plugin",
+              "compressedBytes": 185629845,
+              "entrypoint": "rag-plugin.mjs",
+              "filesCount": 11267,
+              "sha256": "6613a306272f9f256545522fc7e411f29c67f513e243d497b1045f32ff018982",
+              "target": "linux-arm64-glibc",
+              "unpackedBytes": 535422722
+            },
+            {
+              "tool": "opencode-rag-plugin",
+              "compressedBytes": 185629845,
+              "entrypoint": "rag-plugin.mjs",
+              "filesCount": 11267,
+              "sha256": "6613a306272f9f256545522fc7e411f29c67f513e243d497b1045f32ff018982",
+              "target": "linux-arm64-musl",
+              "unpackedBytes": 535422722
+            },
+            {
+              "tool": "opencode-rag-plugin",
+              "compressedBytes": 192264540,
+              "entrypoint": "rag-plugin.mjs",
+              "filesCount": 11269,
+              "sha256": "1f2bc951de072bf805d484cc6e9e98c787b34f056569ca363aa4ab6ef4beedf2",
+              "target": "linux-x64-glibc",
+              "unpackedBytes": 574289788
+            },
+            {
+              "tool": "opencode-rag-plugin",
+              "compressedBytes": 192264540,
+              "entrypoint": "rag-plugin.mjs",
+              "filesCount": 11269,
+              "sha256": "1f2bc951de072bf805d484cc6e9e98c787b34f056569ca363aa4ab6ef4beedf2",
+              "target": "linux-x64-musl",
+              "unpackedBytes": 574289788
+            },
+            {
+              "tool": "opencode-rag-plugin",
+              "compressedBytes": 117258046,
+              "entrypoint": "rag-plugin.mjs",
+              "filesCount": 11239,
+              "sha256": "ba5e8337bc7bcec1c6c8b7968f098994c3391cef7e74fd2930891b911c95c13d",
+              "target": "win32-arm64",
+              "unpackedBytes": 378969154
+            },
+            {
+              "tool": "opencode-rag-plugin",
+              "compressedBytes": 123546086,
+              "entrypoint": "rag-plugin.mjs",
+              "filesCount": 11245,
+              "sha256": "ad2ccea6132d5fb7821636f3a509ba77cdc6c519d432433271ef489b8b6672e9",
+              "target": "win32-x64",
+              "unpackedBytes": 412749815
+            }
+          ]
+        }
+      },
+      "binaryInventory": {
+        "sha256": "89aca11e4a162a804e6641785a4fc09a74daecf42239b46284196689ad0c2299",
+        "result": {
+          "status": "passed",
+          "kind": "native-platform-headers-and-inventory",
+          "targets": 14,
+          "executedOtherPlatforms": false,
+          "artifacts": [
+            {
+              "asset": "opencode-rag",
+              "target": "darwin-arm64",
+              "sha256": "c3b9dc285aeb8ecf9e116a5513ae9555997572634575b31e3616d8ce383f30ae",
+              "filesCount": 7867,
+              "entrypoint": "opencode-rag.mjs",
+              "nativeFile": "node_modules/@lancedb/lancedb-darwin-arm64/lancedb.darwin-arm64.node",
+              "binaryFormat": "Mach-O arm64",
+              "executed": false
+            },
+            {
+              "asset": "opencode-rag",
+              "target": "linux-arm64-glibc",
+              "sha256": "25f6ff224aad3b6fd9cd2bce4f4a682c9341a55099a6c369d45ade436f1d13b8",
+              "filesCount": 7886,
+              "entrypoint": "opencode-rag.mjs",
+              "nativeFile": "node_modules/@lancedb/lancedb-linux-arm64-gnu/lancedb.linux-arm64-gnu.node",
+              "binaryFormat": "ELF64 AArch64",
+              "executed": false
+            },
+            {
+              "asset": "opencode-rag",
+              "target": "linux-arm64-musl",
+              "sha256": "25f6ff224aad3b6fd9cd2bce4f4a682c9341a55099a6c369d45ade436f1d13b8",
+              "filesCount": 7886,
+              "entrypoint": "opencode-rag.mjs",
+              "nativeFile": "node_modules/@lancedb/lancedb-linux-arm64-musl/lancedb.linux-arm64-musl.node",
+              "binaryFormat": "ELF64 AArch64",
+              "executed": false
+            },
+            {
+              "asset": "opencode-rag",
+              "target": "linux-x64-glibc",
+              "sha256": "dfe2ff7496bb3f7a5f1732548f6e1c260bc0b29c857f1b145bb7cafe8969669a",
+              "filesCount": 7886,
+              "entrypoint": "opencode-rag.mjs",
+              "nativeFile": "node_modules/@lancedb/lancedb-linux-x64-gnu/lancedb.linux-x64-gnu.node",
+              "binaryFormat": "ELF64 x86-64",
+              "executed": false
+            },
+            {
+              "asset": "opencode-rag",
+              "target": "linux-x64-musl",
+              "sha256": "dfe2ff7496bb3f7a5f1732548f6e1c260bc0b29c857f1b145bb7cafe8969669a",
+              "filesCount": 7886,
+              "entrypoint": "opencode-rag.mjs",
+              "nativeFile": "node_modules/@lancedb/lancedb-linux-x64-musl/lancedb.linux-x64-musl.node",
+              "binaryFormat": "ELF64 x86-64",
+              "executed": false
+            },
+            {
+              "asset": "opencode-rag",
+              "target": "win32-arm64",
+              "sha256": "74569ad81c04f0ccf7bfed43e2fff5b219f53122371462257e01bde53f97a957",
+              "filesCount": 7863,
+              "entrypoint": "opencode-rag.mjs",
+              "nativeFile": "node_modules/@lancedb/lancedb-win32-arm64-msvc/lancedb.win32-arm64-msvc.node",
+              "binaryFormat": "PE ARM64",
+              "executed": false
+            },
+            {
+              "asset": "opencode-rag",
+              "target": "win32-x64",
+              "sha256": "2df48cb9e07cdc4a17f246edbc1ebdf7864b511ef8ed2acfe9c4df899c6f518d",
+              "filesCount": 7864,
+              "entrypoint": "opencode-rag.mjs",
+              "nativeFile": "node_modules/@lancedb/lancedb-win32-x64-msvc/lancedb.win32-x64-msvc.node",
+              "binaryFormat": "PE AMD64",
+              "executed": false
+            },
+            {
+              "asset": "opencode-rag-plugin",
+              "target": "darwin-arm64",
+              "sha256": "2d0ff4f458c54ec6310b870e84aeb177b8d3a406ae967e1a7acdae035d96eaf1",
+              "filesCount": 11247,
+              "entrypoint": "rag-plugin.mjs",
+              "nativeFile": "node_modules/@lancedb/lancedb-darwin-arm64/lancedb.darwin-arm64.node",
+              "binaryFormat": "Mach-O arm64",
+              "executed": false
+            },
+            {
+              "asset": "opencode-rag-plugin",
+              "target": "linux-arm64-glibc",
+              "sha256": "6613a306272f9f256545522fc7e411f29c67f513e243d497b1045f32ff018982",
+              "filesCount": 11267,
+              "entrypoint": "rag-plugin.mjs",
+              "nativeFile": "node_modules/@lancedb/lancedb-linux-arm64-gnu/lancedb.linux-arm64-gnu.node",
+              "binaryFormat": "ELF64 AArch64",
+              "executed": false
+            },
+            {
+              "asset": "opencode-rag-plugin",
+              "target": "linux-arm64-musl",
+              "sha256": "6613a306272f9f256545522fc7e411f29c67f513e243d497b1045f32ff018982",
+              "filesCount": 11267,
+              "entrypoint": "rag-plugin.mjs",
+              "nativeFile": "node_modules/@lancedb/lancedb-linux-arm64-musl/lancedb.linux-arm64-musl.node",
+              "binaryFormat": "ELF64 AArch64",
+              "executed": false
+            },
+            {
+              "asset": "opencode-rag-plugin",
+              "target": "linux-x64-glibc",
+              "sha256": "1f2bc951de072bf805d484cc6e9e98c787b34f056569ca363aa4ab6ef4beedf2",
+              "filesCount": 11269,
+              "entrypoint": "rag-plugin.mjs",
+              "nativeFile": "node_modules/@lancedb/lancedb-linux-x64-gnu/lancedb.linux-x64-gnu.node",
+              "binaryFormat": "ELF64 x86-64",
+              "executed": false
+            },
+            {
+              "asset": "opencode-rag-plugin",
+              "target": "linux-x64-musl",
+              "sha256": "1f2bc951de072bf805d484cc6e9e98c787b34f056569ca363aa4ab6ef4beedf2",
+              "filesCount": 11269,
+              "entrypoint": "rag-plugin.mjs",
+              "nativeFile": "node_modules/@lancedb/lancedb-linux-x64-musl/lancedb.linux-x64-musl.node",
+              "binaryFormat": "ELF64 x86-64",
+              "executed": false
+            },
+            {
+              "asset": "opencode-rag-plugin",
+              "target": "win32-arm64",
+              "sha256": "ba5e8337bc7bcec1c6c8b7968f098994c3391cef7e74fd2930891b911c95c13d",
+              "filesCount": 11239,
+              "entrypoint": "rag-plugin.mjs",
+              "nativeFile": "node_modules/@lancedb/lancedb-win32-arm64-msvc/lancedb.win32-arm64-msvc.node",
+              "binaryFormat": "PE ARM64",
+              "executed": false
+            },
+            {
+              "asset": "opencode-rag-plugin",
+              "target": "win32-x64",
+              "sha256": "ad2ccea6132d5fb7821636f3a509ba77cdc6c519d432433271ef489b8b6672e9",
+              "filesCount": 11245,
+              "entrypoint": "rag-plugin.mjs",
+              "nativeFile": "node_modules/@lancedb/lancedb-win32-x64-msvc/lancedb.win32-x64-msvc.node",
+              "binaryFormat": "PE AMD64",
+              "executed": false
+            }
+          ]
+        }
+      },
+      "mcpHeadless": {
+        "sha256": "246d45ffbc2b6266dae8d169939117e05ac91251e67a8778a00e8eefb298674b",
+        "result": {
+          "status": "passed",
+          "checks": [
+            "3-to-5-stage-isolation",
+            "source-change-before-commit-preserves-original",
+            "exact-upstream-file-and-directory-limits-reject-truncation",
+            "upstream-exclusions-and-parser-overrides",
+            "7dim-partial-failure-preserves-original",
+            "remote-address-rejected-before-inference",
+            "zero-corpus-stage"
+          ],
+          "calls": 13
+        }
+      },
+      "pluginHeadless": {
+        "sha256": "246d45ffbc2b6266dae8d169939117e05ac91251e67a8778a00e8eefb298674b",
+        "result": {
+          "status": "passed",
+          "checks": [
+            "3-to-5-stage-isolation",
+            "source-change-before-commit-preserves-original",
+            "exact-upstream-file-and-directory-limits-reject-truncation",
+            "upstream-exclusions-and-parser-overrides",
+            "7dim-partial-failure-preserves-original",
+            "remote-address-rejected-before-inference",
+            "zero-corpus-stage"
+          ],
+          "calls": 13
+        }
+      },
+      "pluginProfile": {
+        "sha256": "a5f90aa74f06fbfc093a968f5fc143ecbc3349d49fe4a2b654ef7de7cd2b8455",
+        "result": {
+          "status": "passed",
+          "platform": "darwin",
+          "architecture": "arm64",
+          "checks": [
+            "Модель той же размерности перестраивает неизменённые файлы и только затем разрешает поиск",
+            "Частичный embedding failure после записи здоровых temp-строк сохраняет старые LanceDB и manifest побайтно",
+            "Повтор после отказа выполняет полный rebuild и подтверждает новый профиль",
+            "Runtime model override со старым embedder требует перезапуск без запросов к модели",
+            "Настоящая native factory при autoIndex=false удерживает presence, сохраняет token при reload и освобождает после закрытия stores"
+          ],
+          "providerCalls": 12,
+          "realProfileChanged": false
+        }
+      },
+      "openCodePlugin": {
+        "sha256": "19c97825a1d44593f13a9cf037d46fdcb08d4336f66507d4608e4c34e3f259a5",
+        "result": {
+          "status": "passed",
+          "platform": "darwin",
+          "architecture": "arm64",
+          "nodeVersion": "24.19.0",
+          "engineVersion": "1.14.48",
+          "checks": [
+            "Настоящий OpenCode загрузил 5 hooks и 9 tools из готового плагина",
+            "WASM skeleton и system transform выполнены внутри OpenCode",
+            "Автоиндексирование записало настоящий LanceDB и семантический поиск вернул исходный файл",
+            "Изменение файла автоматически обновило индекс и результат поиска",
+            "Явный autoUpdate в проектном конфиге не запускает запросы или установку",
+            "HTTP 401/503 и неверная размерность возвращают отказ без повторного embedding; настоящее отсутствие совпадений успешно",
+            "find_usages сохраняет отказ провайдера; ответ провайдера отсутствует в инструментах, stdout, stderr, файлах проекта и HOME",
+            "Пустой проект без конфига инициализирует LanceDB с размерностью 2560 без startup-запроса к модели; поиск до индексации сообщает о пустом индексе",
+            "Исходный конфиг сохранён побайтно; дополнительный конфиг не создан",
+            "Watchers и LanceDB завершены; registry не использовался"
+          ],
+          "realProfileChanged": false,
+          "proof": {
+            "hooks": [
+              "event",
+              "tool",
+              "tool.execute.after",
+              "experimental.chat.system.transform",
+              "chat.message"
+            ],
+            "tools": [
+              "search_semantic",
+              "get_file_skeleton",
+              "find_usages",
+              "describe_image",
+              "recall_quirks",
+              "add_quirk",
+              "update_quirk",
+              "delete_quirk",
+              "read"
+            ],
+            "skeleton": true,
+            "systemTransform": true,
+            "automaticIndex": true,
+            "automaticReindex": true,
+            "configPreserved": true,
+            "runtimeOverridesCannotEnableUpdater": true,
+            "failures": [
+              {
+                "query": "nc-fixture-http-401",
+                "output": "Поиск не выполнен: провайдер эмбеддингов вернул HTTP 401. Проверьте локальное подключение."
+              },
+              {
+                "query": "nc-fixture-http-503",
+                "output": "Поиск не выполнен: провайдер эмбеддингов вернул HTTP 503. Проверьте локальное подключение."
+              },
+              {
+                "query": "nc-fixture-dimension",
+                "output": "Поиск не выполнен: модель или индекс не проверены. Перезапустите OpenCode и повторите полное индексирование; при отключённой автоиндексации включите её."
+              }
+            ],
+            "validEmptySearch": true,
+            "failedUsages": true,
+            "singleEmbeddingPerQuery": true,
+            "startupModelCalls": 0,
+            "defaultDimension": 2560,
+            "emptyProjectBeforeIndex": true,
+            "secretScan": {
+              "scannedFiles": 42,
+              "leakedFiles": []
+            },
+            "externalRequests": []
+          },
+          "temporaryProfileRemoved": true,
+          "providerCalls": 12,
+          "registryCalls": 0
+        }
+      },
+      "engine": {
+        "sha256": "d8c1678f15a72e54f0f2e6d2511237c0df4ff9e5e373ba8b32a8e6a5a40ef259",
+        "result": {
+          "bridgeVersion": "0.9.11",
+          "engineVersion": "1.14.48",
+          "archiveSha256": "dd68e7b4087197ac6cef9c7e1a0d6fbe7661b1e441e3a00ba6dabb66bbc4cd1b",
+          "engineSha256": "a29407b32f28ff552539d6f4a1bbe6fafc5023472c7ff8ca2494525b9b0d921b",
+          "rawOfficialArchiveExecution": "macOS rejected original signature; used verified bridge ad-hoc signed exact engine"
+        }
+      }
+    }
+  },
+  "assets": [
+    {
+      "id": "mcp-opencode-rag",
+      "kind": "mcp",
+      "version": "2.4.4-mcp.pack.9",
+      "path": "assets/mcp-opencode-rag/2.4.4-mcp.pack.9/asset.json",
+      "sha256": "74e1f28c4b843b22b24d4576a7ee53440440d570293930044368af594c16c89a",
+      "current": true,
+      "source": {
+        "bytes": 1179984,
+        "sha256": "81f26b6da89b9c8ea52e9ed66c7a287a2471f2d32b0ea142cb54a977f60d3119",
+        "type": "archive"
+      },
+      "sourceUrl": "https://github.com/ghost-raven1/neurocenter-assets/releases/download/rag-v2.4.4-pack.9/mcp-opencode-rag-2.4.4-mcp.pack.9-source.json",
+      "recipe": {
+        "path": "recipes/mcp-opencode-rag/2.4.4-mcp.pack.9/recipe.json",
+        "sha256": "e6082bdf03049ce9cf23cff363d7deb08a95265d04480db9097894ecd34d7797"
+      }
+    },
+    {
+      "id": "plugin-opencode-rag-plugin",
+      "kind": "plugin",
+      "version": "2.4.4-plugin.pack.9",
+      "path": "assets/plugin-opencode-rag-plugin/2.4.4-plugin.pack.9/asset.json",
+      "sha256": "3bb2d420442ec184cb04edb6d7b4a6f828ca2b18895dc357b7c5f31c518a03b0",
+      "current": true,
+      "source": {
+        "bytes": 1182490,
+        "sha256": "9cb9e86b684de5e620bdbb5dd697851e7b9e831798d49a985752d0e735ea7e3f",
+        "type": "archive"
+      },
+      "sourceUrl": "https://github.com/ghost-raven1/neurocenter-assets/releases/download/rag-v2.4.4-pack.9/plugin-opencode-rag-plugin-2.4.4-plugin.pack.9-source.json",
+      "recipe": {
+        "path": "recipes/plugin-opencode-rag-plugin/2.4.4-plugin.pack.9/recipe.json",
+        "sha256": "7c284591a088d8546761fc65e2c017d2c6c1dc763a3ad50edbef97341af62a2d"
+      }
+    }
+  ],
+  "publishedDescriptorsPreserved": 27,
+  "catalogState": "New source files prepared; index merge, source commit and application import are separate operations."
+}
