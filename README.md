@@ -28,6 +28,8 @@ The server fetches upstream files, verifies immutable storage and imports only s
 
 The five initial assets use this single source format: MCP Filesystem, Git context plugin, Qwen3 Embedding 4B, bridge 0.9.10 and the packaging skill. Their pinned release URLs are server supply locations. The earlier release files are not a second catalog or an alternate import format. Both tool archives and both bridge payloads were checked against locally available bytes; the model lock and bundle passed native metadata validation, but model download and inference were not run.
 
+The index also includes twelve curated GitHub skills with 187 bundled resources: Vite, Vitest, PostgreSQL, NestJS, Playwright, MCP development, React state/Zustand, TypeScript, API design, accessibility, code review and CI/CD. Each preserves its pinned upstream instructions, provenance and full MIT or Apache-2.0 notice. Application owner IDs and mutable local history are excluded. Vite 8 and Vitest 5 instructions describe those majors; applicability to another major needs a separate check. Bundled scripts are documentation resources and are not executed by import.
+
 `NOASSERTION` means license clearance has not been asserted. Before redistribution, preserve and verify the upstream license and notices. The Filesystem archive's metadata refers to a LICENSE file that was not present at the expected package path; importing its descriptor does not establish permission to redistribute that archive.
 
 For an integration check against the app's actual source validators:

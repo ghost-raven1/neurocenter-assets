@@ -24,7 +24,7 @@ try {
   const {validateSkillCreate}=skillRequire('./src/skills/skill-validation.ts');
   const {renderSkillInstruction}=require('../shared/skill-package.cjs');
   const {normalizeRuntimeArtifacts}=require('../shared/runtime-artifacts.cjs');
-  const {validateBridgeRuntimeRelease}=await import(pathToFileURL(path.join(app,'scripts/bridge-runtime-release.mjs')));
+  const {validateBridgeRuntimeRelease}=await import(pathToFileURL(path.join(app,'scripts/bridge-runtime-artifacts.mjs')));
   const {validateModelBundle}=await import(pathToFileURL(path.join(app,'scripts/models/bundle-manifest.mjs')));
   const repository=await loadRepository(fileURLToPath(new URL('../',import.meta.url)));
   const checked=[];

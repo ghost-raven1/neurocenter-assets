@@ -16,7 +16,7 @@ async function fixture(t) {
 test('Репозиторий читается из cwd с пробелами, validate и preview не меняют файлы',async t=>{
   const directory=await fixture(t),before=await fs.readFile(path.join(directory,'index.json'));
   const validation=JSON.parse((await execute(process.execPath,[cli,'validate','.'],{cwd:directory})).stdout);
-  assert.equal(validation.ok,true);assert.equal(validation.assets,5);
+  assert.equal(validation.ok,true);assert.equal(validation.assets,JSON.parse(before).assets.length);
   const preview=JSON.parse((await execute(process.execPath,[cli,'preview','.',validation.kinds.includes('mcp')?'mcp-filesystem':'missing'],{cwd:directory})).stdout);
   assert.equal(preview.dryRun,true);assert.equal(preview.assets.length,1);assert.equal(preview.assets[0].native.kind,'mcp');
   assert.deepEqual(await fs.readFile(path.join(directory,'index.json')),before);
@@ -42,7 +42,7 @@ test('Pinned recipe проверяется до появления готово�
   await fs.mkdir(path.join(directory,'recipes'));await fs.writeFile(path.join(directory,'recipes/tool.json'),'{}\n');
   record.asset.recipe={path:'recipes/tool.json',sha256:assetDigest('{}\n')};
   const bytes=serializeAsset(record.asset);entry.sha256=assetDigest(bytes);await fs.writeFile(path.join(directory,entry.path),bytes);await fs.writeFile(path.join(directory,'index.json'),JSON.stringify(loaded.index));
-  assert.equal((await loadRepository(directory)).assets.length,5);
+  assert.equal((await loadRepository(directory)).assets.length,loaded.assets.length);
   await fs.writeFile(path.join(directory,'recipes/tool.json'),'{}');await assert.rejects(loadRepository(directory),/Recipe SHA mismatch/);
 });
 test('CLI не принимает неизвестные команды и отсутствие явного выбора',async()=>{
@@ -70,5 +70,5 @@ test('Reader и CLI сохраняют исторический exact dependency
   }
   await fs.writeFile(path.join(directory,'index.json'),JSON.stringify(loaded.index));
   const read=await loadRepository(directory);assert.equal(read.assets.find(item=>item.asset.id===old.asset.id&&item.asset.version===old.asset.version).current,false);
-  const report=JSON.parse((await execute(process.execPath,[cli,'validate',directory])).stdout);assert.equal(report.ok,true);assert.equal(report.assets,7);
+  const report=JSON.parse((await execute(process.execPath,[cli,'validate',directory])).stdout);assert.equal(report.ok,true);assert.equal(report.assets,read.assets.length);
 });

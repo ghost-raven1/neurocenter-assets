@@ -6,7 +6,8 @@ export interface RuntimeArtifact {
 export interface Dependency { id: string; version: string; sha256: string }
 export type AssetSource = {type:'git';repository:string;commit:string;path?:string}
   | {type:'npm';name:string;version:string;integrity?:string}
-  | {type:'release';repository:string;tag:string};
+  | {type:'release';repository:string;tag:string}
+  | {type:'archive';sha256:string;bytes:number};
 export interface AssetBase {
   schemaVersion: 1; id: string; kind: AssetKind; version: string; source: AssetSource;
   license: {spdx:string;url?:string};
@@ -18,7 +19,7 @@ export interface AssetBase {
 export interface ToolAsset extends AssetBase {
   kind: 'mcp'|'plugin';
   card: {name:string;kind:'mcp'|'plugin';description:string;revision:string;version?:1;files:unknown[];config:Record<string,unknown>;[key:string]:unknown};
-  delivery: {type:'runtime-artifacts';artifacts:Array<{url:string;descriptor:RuntimeArtifact}>};
+  delivery: {type:'runtime-artifacts';artifacts:Array<{url?:string;descriptor:RuntimeArtifact}>};
 }
 export interface SkillAsset extends AssetBase {
   kind:'skill'; card:{path:'common';slug:string;name:string;body:string;meta:Record<string,unknown>;resources?:unknown[]}; delivery:{type:'inline'};
@@ -58,7 +59,7 @@ export function toModelRecord(asset:ModelAsset):ModelAsset['card'];
 export function toBridgeRelease(asset:BridgeAsset):BridgeAsset['delivery']['release'];
 /** Producer boundary for existing packager output; rejects divergent duplicate runtime descriptors. */
 export function createToolAsset(input:{id:string;version:string;source:AssetSource;license:AssetBase['license'];publication:ToolAsset['card'];artifacts:ToolAsset['delivery']['artifacts'];dependencies?:Dependency[];resolvedDependencies?:DependencyContext;recipe?:AssetBase['recipe']}):ToolAsset;
-export interface DownloadArtifact {url:string;sha256:string;bytes:number;filename:string;target?:string}
+export interface DownloadArtifact {url?:string;sha256:string;bytes:number;filename:string;target?:string}
 export function downloadArtifacts(asset:AssetDescriptor):DownloadArtifact[];
 /** Server-supply only. Devices download through deployment-specific API Gateway endpoints. */
 export function fetchArtifact(artifact:DownloadArtifact,filename:string,options?:{fetch?:typeof fetch;signal?:AbortSignal}):Promise<void>;
