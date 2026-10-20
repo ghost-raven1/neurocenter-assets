@@ -10,7 +10,7 @@ const tool=loaded.assets.find(item=>item.asset.kind==='mcp').asset;
 const plugin=loaded.assets.find(item=>item.asset.kind==='plugin').asset;
 const model=loaded.assets.find(item=>item.asset.kind==='model').asset;
 const bridge=loaded.assets.find(item=>item.asset.kind==='bridge').asset;
-const skill=loaded.assets.find(item=>item.asset.kind==='skill').asset;
+const skill=loaded.assets.find(item=>item.asset.id==='skill-neurocenter-packaging'&&item.current).asset;
 const mutate=(asset,change)=>{const value=structuredClone(asset);change(value);return value;};
 const record=asset=>({asset,sha256:assetDigest(serializeAsset(asset)),path:`assets/${asset.id}/${asset.version}/asset.json`,current:true});
 

@@ -143,6 +143,70 @@
       "path": "assets/skill-neurocenter-packaging/1.1.0/asset.json",
       "sha256": "09b9fcd410357d017b0d151d826fa9210098d7f1fc8e6793a9b808dfec8bb10b",
       "version": "1.1.0"
+    },
+    {
+      "id": "mcp-memory",
+      "version": "1.0.0",
+      "kind": "mcp",
+      "path": "assets/mcp-memory/1.0.0/asset.json",
+      "sha256": "c4c042517b6fbd3f36fd04246dbf00a6dd0125972c10edaf7496d80c2f88f902",
+      "current": true
+    },
+    {
+      "id": "mcp-sequential-thinking",
+      "version": "1.0.0",
+      "kind": "mcp",
+      "path": "assets/mcp-sequential-thinking/1.0.0/asset.json",
+      "sha256": "13a16db45838cf20e630312d188f29ae82b9646f17a5ac0f26305725ab3c2432",
+      "current": true
+    },
+    {
+      "id": "plugin-project-context",
+      "version": "1.0.1-pack.1",
+      "kind": "plugin",
+      "path": "assets/plugin-project-context/1.0.1-pack.1/asset.json",
+      "sha256": "886162707c25793c294487d959767f52c4787478484c2a91c6bef51521d6850a",
+      "current": true
+    },
+    {
+      "id": "mcp-opencode-rag",
+      "version": "2.4.4-mcp.pack.8",
+      "kind": "mcp",
+      "path": "assets/mcp-opencode-rag/2.4.4-mcp.pack.8/asset.json",
+      "sha256": "1da6a236243342d29c4461d8614688bc072fbfa90218a538cd702b151a427cc9",
+      "current": true
+    },
+    {
+      "id": "plugin-opencode-rag-plugin",
+      "version": "2.4.4-plugin.pack.8",
+      "kind": "plugin",
+      "path": "assets/plugin-opencode-rag-plugin/2.4.4-plugin.pack.8/asset.json",
+      "sha256": "7f6750251571082e6c498f4434f8cb80af7eb270a16f60bfefe65a2f57c3d283",
+      "current": true
+    },
+    {
+      "id": "plugin-opencode-snip",
+      "version": "2.0.0+snip.0.25.2",
+      "kind": "plugin",
+      "path": "assets/plugin-opencode-snip/2.0.0+snip.0.25.2/asset.json",
+      "sha256": "a2d29d2deaf76c5036404cab38819542c6f9074fc64a432503a08e59ef8ed562",
+      "current": true
+    },
+    {
+      "id": "mcp-fetch-mcp",
+      "version": "git-1ddb1a59cb09a2d38e759f2d7a97829680cbe514-compat.1",
+      "kind": "mcp",
+      "path": "assets/mcp-fetch-mcp/git-1ddb1a59cb09a2d38e759f2d7a97829680cbe514-compat.1/asset.json",
+      "sha256": "16d33f59f91ca283a9afd20412853c36fe992c38c1221259ba5f5a0ce34fca15",
+      "current": true
+    },
+    {
+      "id": "model-vision-qwen3-vl-2b",
+      "version": "models-2026-10-19.1",
+      "kind": "model",
+      "path": "assets/model-vision-qwen3-vl-2b/models-2026-10-19.1/asset.json",
+      "sha256": "9cd12897cd970f12db9f7d07d921c87c5a8e204161fcddbf2f917cbfed37ffa7",
+      "current": true
     }
   ],
   "schemaVersion": 1
