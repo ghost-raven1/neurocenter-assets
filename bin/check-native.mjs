@@ -6,7 +6,7 @@ import path from 'node:path';
 import {pathToFileURL} from 'node:url';
 import {fileURLToPath} from 'node:url';
 import assert from 'node:assert/strict';
-import {loadRepository,toToolPublication,toSkillCreate,toModelRecord,toBridgeRelease,createToolAsset,validateAsset} from '../lib/index.mjs';
+import {loadRepository,toToolPublication,toSkillCreate,toModelRecord,toBridgeRelease,toAgentRecord,createToolAsset,validateAsset} from '../lib/index.mjs';
 
 const app=path.resolve(process.argv[2]||'../neurocenter');
 const require=createRequire(path.join(app,'services/catalog-service/package.json'));
@@ -50,6 +50,10 @@ try {
       if(validateModelDescriptor)validateModelDescriptor(card.descriptor);
       if(asset.delivery.type==='model-bundle')validateModelBundle(asset.delivery.bundle,[asset.delivery.lock]);
       checked.push({id:asset.id,kind:asset.kind,delivery:asset.delivery.type});
+    }else if(asset.kind==='agent') {
+      const card=toAgentRecord(asset),{normalizeAgentDefinition}=require('../shared/project-agents.cjs');
+      assert.deepEqual(normalizeAgentDefinition(card.definition),card.definition);
+      checked.push({id:asset.id,kind:asset.kind,delivery:'inline',nativeAgent:true});
     }else {
       assert.deepEqual(validateBridgeRuntimeRelease(toBridgeRelease(asset)),asset.delivery.release);
       checked.push({id:asset.id,kind:asset.kind,protocol:asset.compatibility.bridgeProtocol});

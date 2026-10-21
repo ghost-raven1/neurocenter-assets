@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 import {readFile,writeFile,lstat} from 'node:fs/promises';
-import {loadRepository,selectAssets,assetDigest,toToolPublication,toSkillCreate,toModelRecord,toBridgeRelease,downloadArtifacts,createToolAsset,serializeAsset,assertIndexEvolution} from '../lib/index.mjs';
+import {loadRepository,selectAssets,assetDigest,toToolPublication,toSkillCreate,toModelRecord,toBridgeRelease,toAgentRecord,downloadArtifacts,createToolAsset,serializeAsset,assertIndexEvolution} from '../lib/index.mjs';
 
 const help=`neurocenter-assets validate [directory]
 neurocenter-assets list [directory]
@@ -41,7 +41,7 @@ async function main(args) {
   }
   if(command==='list')return {ok:true,indexSha256:loaded.indexSha256,assets:loaded.assets.map(({asset,sha256,current})=>({id:asset.id,kind:asset.kind,version:asset.version,sha256,current,name:asset.card.name,license:asset.license.spdx,
     targets:[...new Set(downloadArtifacts(asset).map(item=>item.target).filter(Boolean))]}))};
-  const selected=selectAssets(loaded.assets,ids),adapters={mcp:toToolPublication,plugin:toToolPublication,skill:toSkillCreate,model:toModelRecord,bridge:toBridgeRelease};
+  const selected=selectAssets(loaded.assets,ids),adapters={mcp:toToolPublication,plugin:toToolPublication,skill:toSkillCreate,model:toModelRecord,bridge:toBridgeRelease,agent:toAgentRecord};
   return {ok:true,dryRun:true,indexSha256:loaded.indexSha256,assets:selected.map(({asset,sha256,path,current})=>({id:asset.id,kind:asset.kind,version:asset.version,sha256,path,current,
     native:adapters[asset.kind](asset),serverSupply:downloadArtifacts(asset)}))};
 }

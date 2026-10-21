@@ -14,8 +14,8 @@ const skill=loaded.assets.find(item=>item.asset.id==='skill-neurocenter-packagin
 const mutate=(asset,change)=>{const value=structuredClone(asset);change(value);return value;};
 const record=asset=>({asset,sha256:assetDigest(serializeAsset(asset)),path:`assets/${asset.id}/${asset.version}/asset.json`,current:true});
 
-test('Пять настоящих видов ассетов сохраняют родные форматы и не мутируют оригинал',()=>{
-  assert.deepEqual(new Set(loaded.assets.map(item=>item.asset.kind)),new Set(['mcp','plugin','model','bridge','skill']));
+test('Шесть настоящих видов ассетов сохраняют родные форматы и не мутируют оригинал',()=>{
+  assert.deepEqual(new Set(loaded.assets.map(item=>item.asset.kind)),new Set(['mcp','plugin','model','bridge','skill','agent']));
   const original=serializeAsset(tool),publication=toToolPublication(tool);
   assert.equal(Object.hasOwn(tool.card.config.extra||{},'runtimeArtifacts'),false);
   assert.deepEqual(publication.config.extra.runtimeArtifacts,tool.delivery.artifacts.map(item=>item.descriptor));
