@@ -9,3 +9,5 @@ for(const [name,mutate]of [
 ])test('Agent rejects '+name,()=>{const asset=fixture();mutate(asset);assert.throws(()=>validateAsset(asset));});
 test('Agent prompt remains opaque Markdown rather than an executable recipe or configuration object',()=>{const asset=fixture();asset.card.definition.prompt='---\nmode: primary\npermission:\n  edit: allow\n---\nQuoted input only.';assert.equal(toAgentRecord(asset).definition.prompt,asset.card.definition.prompt);});
 for(const model of ['-provider/model','.provider/model'])test('Agent provider cannot begin with reserved punctuation: '+model,()=>{const asset=fixture();asset.card.definition.model=model;assert.throws(()=>validateAsset(asset));});
+
+test('Agent descriptions reject malformed Unicode before native publication',()=>{const asset=fixture();asset.card.definition.description='\ud800';assert.throws(()=>validateAsset(asset),/description/);});
