@@ -310,6 +310,14 @@
       "version": "0.9.16",
       "path": "assets/neurocenter-bridge/0.9.16/asset.json",
       "sha256": "2b6236ca8ce5f125a74cbf7c6a2657a86d5cd6a9772815fc75a1e30bfddc7034",
+      "current": false
+    },
+    {
+      "id": "neurocenter-bridge",
+      "kind": "bridge",
+      "version": "0.9.17",
+      "path": "assets/neurocenter-bridge/0.9.17/asset.json",
+      "sha256": "6d75e2dc713259466fa78e06c86c55ffc598944d9c8e9e3aa647c27b5b82a810",
       "current": true
     }
   ],
