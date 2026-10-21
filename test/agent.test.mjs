@@ -11,3 +11,5 @@ test('Agent prompt remains opaque Markdown rather than an executable recipe or c
 for(const model of ['-provider/model','.provider/model'])test('Agent provider cannot begin with reserved punctuation: '+model,()=>{const asset=fixture();asset.card.definition.model=model;assert.throws(()=>validateAsset(asset));});
 
 test('Agent descriptions reject malformed Unicode before native publication',()=>{const asset=fixture();asset.card.definition.description='\ud800';assert.throws(()=>validateAsset(asset),/description/);});
+
+test('Agent names reject malformed Unicode before native publication',()=>{const asset=fixture();asset.card.name='\ud800';assert.throws(()=>validateAsset(asset),/name/);});
