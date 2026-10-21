@@ -1,0 +1,289 @@
+{
+  "schemaVersion": 1,
+  "status": "validated-runtime-awaiting-publication",
+  "checkedAt": "2026-10-21T09:38:32.592Z",
+  "version": "0.9.16",
+  "appSourceCommit": "621980789256d8570d027d8ed36e6e73a0db2fa7",
+  "bridgeCodeCommit": "9f4a66a72e457c76d0a9a113759afe3bd2e9dc4e",
+  "sourceContractCommit": "2bcbdcbd77d003c078ce6357d64375de6ede1ff6",
+  "buildId": "52b469df24de11004dc95632e57a0025fc25eea58a5b2fe5c70961e95f65b518",
+  "release": {
+    "repository": "ghost-raven1/neurocenter-assets",
+    "tag": "bridge-v0.9.16",
+    "url": "https://github.com/ghost-raven1/neurocenter-assets/releases/tag/bridge-v0.9.16",
+    "targetCommit": null
+  },
+  "descriptor": {
+    "sha256": "2b6236ca8ce5f125a74cbf7c6a2657a86d5cd6a9772815fc75a1e30bfddc7034",
+    "bytes": 2453,
+    "path": "assets/neurocenter-bridge/0.9.16/asset.json"
+  },
+  "npmConfigurationIsolation": {
+    "enabled": true,
+    "officialRegistry": "https://registry.npmjs.org/",
+    "strictSsl": true,
+    "userGlobalConfig": "separate empty files",
+    "inheritedNpmConfigRemoved": true,
+    "hostRegistryFilesExcludedFromDockerContexts": true,
+    "proxyAndCertificateSupportPreserved": true,
+    "fullApplicationImagesBuilt": false
+  },
+  "producerInputs": [
+    {
+      "file": "scripts/package-bridge-runtime.mjs",
+      "bytes": 6111,
+      "sha256": "55158fb4284ab702baab7b059e84b8c1ac0d7508571eb0a4a67d34577a986d44"
+    },
+    {
+      "file": "scripts/prepare-bridge-runtimes.mjs",
+      "bytes": 13954,
+      "sha256": "2875c394dc4ebeeb3d6b74dc83077a748a5f47e3bd5973ed997cb048da2abe84"
+    },
+    {
+      "file": "scripts/bridge-build-integrity.mjs",
+      "bytes": 1418,
+      "sha256": "deb1ba58f62e9db2e19c885e7686946775ed007d61733d6337bad0d647993f93"
+    },
+    {
+      "file": "scripts/bridge-runtime-probe.mjs",
+      "bytes": 3960,
+      "sha256": "66ef903aaae98322607d210a64e886a8cae6c2926d2d262e3acdf4f70c555e96"
+    },
+    {
+      "file": "scripts/bridge-windows-job.mjs",
+      "bytes": 1800,
+      "sha256": "c6d1439e20072aad40b6170676aeba080ee6140fd726540e8ee0e5f62b384f74"
+    },
+    {
+      "file": "scripts/opencode-platforms.mjs",
+      "bytes": 1003,
+      "sha256": "b3bb638113c78916e8b94a71814d8f962752852b5466af651fbbed38b6cb21c2"
+    },
+    {
+      "file": "scripts/workspace/node-runtime.mjs",
+      "bytes": 4027,
+      "sha256": "3e26536070c7f24cdfd96d3887a5af0190135b02239e67232ce0a75d9bf3bd80"
+    },
+    {
+      "file": "scripts/workspace/npm-build-environment.mjs",
+      "bytes": 1041,
+      "sha256": "c0bcec7e7e5c189586a12a42de691896cb30c6cbb0b20fe00fdcc4722f8ddbe0"
+    },
+    {
+      "file": "services/api-gateway/Dockerfile",
+      "bytes": 1630,
+      "sha256": "8d69ab3ef986f3a91b6525be7ae626959380a24dfa816c3ee69efe4204825579"
+    },
+    {
+      "file": "mcp/neurocenter-asset-sync/package.json",
+      "bytes": 1435,
+      "sha256": "e0867b6426f170eac662b8539efacd6226403185349575fb438a6f66e4f4d980"
+    },
+    {
+      "file": "mcp/neurocenter-asset-sync/package-lock.json",
+      "bytes": 256781,
+      "sha256": "7b2f95d9601264b3ccd92116a3a6209ad016b8a6513d14d361cd00ee048b4880"
+    },
+    {
+      "file": "mcp/neurocenter-asset-sync/scripts/build.mjs",
+      "bytes": 2802,
+      "sha256": "84abef6e9880580dac11b1f030aff99a40213cf66dcd71882de1293f1c7f5780"
+    }
+  ],
+  "artifacts": [
+    {
+      "name": "neurocenter-asset-sync-darwin-arm64-0.9.16.tgz",
+      "bytes": 123098360,
+      "sha256": "229a3d175cdd4f5d313d6fd3d6ed17a3cab313853d3016fbb0d541d9e415426f"
+    },
+    {
+      "name": "neurocenter-asset-sync-darwin-arm64-0.9.16.tgz.json",
+      "bytes": 454,
+      "sha256": "74a28632a23e780b2c9be309090a1eea194ce99fc49d32cf0d99795497ad1212"
+    },
+    {
+      "name": "neurocenter-asset-sync-darwin-arm64-0.9.16.tgz.sha256",
+      "bytes": 65,
+      "sha256": "702fede51297598ba89f2dec651327af273d5f599b4a05e8abf0c33dc3614876"
+    },
+    {
+      "name": "neurocenter-asset-sync-linux-x64-0.9.16.tgz",
+      "bytes": 203252980,
+      "sha256": "3a4fb16a083b5e359f208447953da1487fdd92ca51e0c98cdde0d78d59d40f2a"
+    },
+    {
+      "name": "neurocenter-asset-sync-linux-x64-0.9.16.tgz.json",
+      "bytes": 451,
+      "sha256": "93852162171e3e15d029c95bd67246472382414070eed4e420b15fe4679c57cd"
+    },
+    {
+      "name": "neurocenter-asset-sync-linux-x64-0.9.16.tgz.sha256",
+      "bytes": 65,
+      "sha256": "34734082c63aff875ac74e9cd992cfccd31f81b886c750b74da4aaccdb63cf0e"
+    },
+    {
+      "name": "neurocenter-bridge-0.9.16.asset.json",
+      "bytes": 2453,
+      "sha256": "2b6236ca8ce5f125a74cbf7c6a2657a86d5cd6a9772815fc75a1e30bfddc7034"
+    }
+  ],
+  "httpsReadback": [],
+  "platformReports": [
+    {
+      "checkedAt": "2026-10-21T09:34:50.774Z",
+      "metadata": {
+        "version": "0.9.16",
+        "target": "darwin-arm64",
+        "nodeVersion": "24.22.0",
+        "buildId": "52b469df24de11004dc95632e57a0025fc25eea58a5b2fe5c70961e95f65b518",
+        "ragSupported": true,
+        "probeEngine": {
+          "version": "1.14.48",
+          "sha256": "a29407b32f28ff552539d6f4a1bbe6fafc5023472c7ff8ca2494525b9b0d921b",
+          "file": "bin/opencode-probe"
+        },
+        "sha256": "229a3d175cdd4f5d313d6fd3d6ed17a3cab313853d3016fbb0d541d9e415426f",
+        "bytes": 123098360
+      },
+      "cases": [
+        "Контрольная сумма готового автономного архива совпадает с манифестом",
+        "Версии descriptor, package, runtime и dist/build совпадают до запуска MCP",
+        "Загруженная compiled-программа подтверждает RAG-профиль, полный снимок и buildId",
+        "Встроенный runtime запускается без Node и npm в PATH",
+        "Регистрация автономного MCP сохраняет JSONC, другие MCP и повторяется без изменений",
+        "Готовый runtime снимает полный LanceDB образ, сохраняя таблицы, схему, индекс и поиск",
+        "Compiled worker получает агенты через HTTP, переживает lost ACK и подтверждает native enable/disable/removal",
+        "Compiled collector runs inside pinned OpenCode, emits metadata only, rejects stale bindings and removes cleanly",
+        "Реальный stdio MCP загружается из готового пакета и сообщает протокол, сборку и LanceDB",
+        "В артефакте отсутствуют старые команды небезопасной записи"
+      ],
+      "agents": {
+        "capability": true,
+        "jobKind": true,
+        "httpJobs": 6,
+        "lostAckPreserved": true,
+        "staleInstanceRejected": true,
+        "manualAgentPreserved": true,
+        "nativeChecks": 4,
+        "engineVersion": "1.14.48",
+        "engineSha256": "a29407b32f28ff552539d6f4a1bbe6fafc5023472c7ff8ca2494525b9b0d921b",
+        "buildId": "52b469df24de11004dc95632e57a0025fc25eea58a5b2fe5c70961e95f65b518",
+        "requests": 40
+      },
+      "learning": {
+        "nativePluginDiscovered": true,
+        "metadataOnly": true,
+        "repeatedIdleNoDuplicate": true,
+        "staleBindingDropped": true,
+        "managedCollectorRemoved": true,
+        "engineVersion": "1.14.48"
+      },
+      "executor": {
+        "platform": "darwin",
+        "arch": "arm64",
+        "nodeVersion": "24.22.0",
+        "emulated": false
+      },
+      "fatal": null,
+      "temporaryProfileRemoved": true,
+      "realProfileChanged": false
+    },
+    {
+      "checkedAt": "2026-10-21T09:37:07.069Z",
+      "metadata": {
+        "version": "0.9.16",
+        "target": "linux-x64",
+        "nodeVersion": "24.22.0",
+        "buildId": "52b469df24de11004dc95632e57a0025fc25eea58a5b2fe5c70961e95f65b518",
+        "ragSupported": true,
+        "probeEngine": {
+          "version": "1.14.48",
+          "sha256": "8732bd22e724fc19055e0e2800b763dbe9efc1e9ca004dc2f8836a9c124303b7",
+          "file": "bin/opencode-probe"
+        },
+        "sha256": "3a4fb16a083b5e359f208447953da1487fdd92ca51e0c98cdde0d78d59d40f2a",
+        "bytes": 203252980
+      },
+      "cases": [
+        "Контрольная сумма готового автономного архива совпадает с манифестом",
+        "Версии descriptor, package, runtime и dist/build совпадают до запуска MCP",
+        "Загруженная compiled-программа подтверждает RAG-профиль, полный снимок и buildId",
+        "Встроенный runtime запускается без Node и npm в PATH",
+        "Регистрация автономного MCP сохраняет JSONC, другие MCP и повторяется без изменений",
+        "Готовый runtime снимает полный LanceDB образ, сохраняя таблицы, схему, индекс и поиск",
+        "Compiled worker получает агенты через HTTP, переживает lost ACK и подтверждает native enable/disable/removal",
+        "Compiled collector runs inside pinned OpenCode, emits metadata only, rejects stale bindings and removes cleanly",
+        "Реальный stdio MCP загружается из готового пакета и сообщает протокол, сборку и LanceDB",
+        "В артефакте отсутствуют старые команды небезопасной записи"
+      ],
+      "agents": {
+        "capability": true,
+        "jobKind": true,
+        "httpJobs": 6,
+        "lostAckPreserved": true,
+        "staleInstanceRejected": true,
+        "manualAgentPreserved": true,
+        "nativeChecks": 4,
+        "engineVersion": "1.14.48",
+        "engineSha256": "8732bd22e724fc19055e0e2800b763dbe9efc1e9ca004dc2f8836a9c124303b7",
+        "buildId": "52b469df24de11004dc95632e57a0025fc25eea58a5b2fe5c70961e95f65b518",
+        "requests": 41
+      },
+      "learning": {
+        "nativePluginDiscovered": true,
+        "metadataOnly": true,
+        "repeatedIdleNoDuplicate": true,
+        "staleBindingDropped": true,
+        "managedCollectorRemoved": true,
+        "engineVersion": "1.14.48"
+      },
+      "executor": {
+        "platform": "linux",
+        "arch": "x64",
+        "nodeVersion": "24.22.0",
+        "emulated": true,
+        "hostPlatform": "darwin",
+        "hostArch": "arm64",
+        "containerPlatform": "linux/amd64",
+        "image": "node:24.22.0-bookworm-slim@sha256:a5f4366e834695d5f363b920c104953a535d3a9864d1bdf74566a0ebe01daee5",
+        "network": "none",
+        "readOnlyRoot": true
+      },
+      "fatal": null,
+      "temporaryProfileRemoved": true,
+      "realProfileChanged": false
+    }
+  ],
+  "tests": {
+    "bridge": {
+      "passed": 1106,
+      "skipped": 3,
+      "suitesPassed": 84,
+      "suitesSkipped": 2,
+      "nodeVersion": "24.22.0",
+      "engineVersion": "1.14.48",
+      "engineSha256": "a29407b32f28ff552539d6f4a1bbe6fafc5023472c7ff8ca2494525b9b0d921b",
+      "log": {
+        "file": ".run/release-0.10.0/bridge-vitest-verified-native.log",
+        "bytes": 296,
+        "sha256": "2e3c537539c98c818b7b79e505a3ce6c00d66e93b159be73c29711393f8c068c"
+      }
+    },
+    "npmIsolationAndProducer": {
+      "passed": 27,
+      "failed": 0,
+      "command": "node --test scripts/test/npm-build-isolation.test.mjs scripts/test/prepare-bridge-runtimes.test.mjs"
+    }
+  },
+  "skippedBridgeTests": [
+    "catalog-ready opt-in",
+    "native RAG roundtrip opt-in",
+    "native RAG snapshot opt-in"
+  ],
+  "oldVersionsChanged": false,
+  "publicationPolicy": "new version, no overwrite, exact SHA-256 and bytes",
+  "githubImmutable": false,
+  "productionDeployed": false,
+  "externalTargetAcceptance": false,
+  "boundary": "macOS ARM64 native; Linux x64 in a pinned Docker amd64 container under emulation on macOS ARM64. No other native platforms or model inference claimed. Source test results are local; CI and production deployment remain separate evidence."
+}

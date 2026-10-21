@@ -142,7 +142,7 @@
       "version": "0.9.15",
       "path": "assets/neurocenter-bridge/0.9.15/asset.json",
       "sha256": "43bcf4a1a5561902990be83d90a0dc399a12eddc3ad8981d314729500968aff0",
-      "current": true
+      "current": false
     },
     {
       "current": true,
@@ -303,6 +303,14 @@
       "path": "assets/skill-vitest/1.0.0/asset.json",
       "sha256": "0f253adca052c9a7eb16f6c447182aaa6d72d74a8634bc95266356612eb99f35",
       "version": "1.0.0"
+    },
+    {
+      "id": "neurocenter-bridge",
+      "kind": "bridge",
+      "version": "0.9.16",
+      "path": "assets/neurocenter-bridge/0.9.16/asset.json",
+      "sha256": "2b6236ca8ce5f125a74cbf7c6a2657a86d5cd6a9772815fc75a1e30bfddc7034",
+      "current": true
     }
   ],
   "schemaVersion": 1
