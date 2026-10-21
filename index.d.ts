@@ -1,4 +1,4 @@
-export type AssetKind = 'mcp' | 'plugin' | 'skill' | 'model' | 'bridge';
+export type AssetKind = 'mcp' | 'plugin' | 'skill' | 'model' | 'bridge' | 'agent';
 export interface RuntimeArtifact {
   target: 'darwin-arm64'|'darwin-x64'|'linux-arm64-glibc'|'linux-x64-glibc'|'linux-arm64-musl'|'linux-x64-musl'|'win32-arm64'|'win32-x64';
   sha256: string; compressedBytes: number; unpackedBytes: number; filesCount: number; entrypoint: string; executable?: boolean;
@@ -32,7 +32,14 @@ export interface BridgeAsset extends AssetBase {
   kind:'bridge';card:{name:string;description:string;tags?:string[]};
   delivery:{type:'bridge-release';release:{schemaVersion:1;version:string;buildId:string;release:string;artifacts:Array<{file:string;url:string;metadata:Record<string,unknown>}>}};
 }
-export type AssetDescriptor=ToolAsset|SkillAsset|ModelAsset|BridgeAsset;
+export interface AgentDefinition {
+  description:string;prompt:string;mode:'primary'|'subagent'|'all';model?:string;temperature?:number;topP?:number;steps?:number;
+  permission:Partial<Record<'read'|'edit'|'bash'|'glob'|'grep'|'list'|'task'|'external_directory'|'todowrite'|'question'|'webfetch'|'websearch'|'lsp'|'doom_loop'|'skill','allow'|'ask'|'deny'>>;
+}
+export interface AgentAsset extends AssetBase {
+  kind:'agent';card:{id:string;slug:string;name:string;definition:AgentDefinition};delivery:{type:'inline'};
+}
+export type AssetDescriptor=ToolAsset|SkillAsset|ModelAsset|BridgeAsset|AgentAsset;
 export interface IndexEntry {id:string;kind:AssetKind;version:string;path:string;sha256:string;current:boolean}
 export interface AssetIndex {schemaVersion:1;assets:IndexEntry[]}
 export interface ResolvedAsset {asset:AssetDescriptor;sha256:string;path:string;current:boolean}
@@ -57,6 +64,8 @@ export function toSkillCreate(asset:SkillAsset,context?:DependencyContext):Skill
 export function toModelRecord(asset:ModelAsset):ModelAsset['card'];
 /** Supply edges remain in provenance/retention; they never become MCP installation dependency pins. */
 export function toBridgeRelease(asset:BridgeAsset):BridgeAsset['delivery']['release'];
+/** Agents are validated as native OpenCode definitions before catalog persistence. */
+export function toAgentRecord(asset:AgentAsset):AgentAsset['card'];
 /** Producer boundary for existing packager output; rejects divergent duplicate runtime descriptors. */
 export function createToolAsset(input:{id:string;version:string;source:AssetSource;license:AssetBase['license'];publication:ToolAsset['card'];artifacts:ToolAsset['delivery']['artifacts'];dependencies?:Dependency[];resolvedDependencies?:DependencyContext;recipe?:AssetBase['recipe']}):ToolAsset;
 export interface DownloadArtifact {url?:string;sha256:string;bytes:number;filename:string;target?:string}
