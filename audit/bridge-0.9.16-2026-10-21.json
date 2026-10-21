@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "status": "validated-runtime-awaiting-publication",
-  "checkedAt": "2026-10-21T09:38:32.592Z",
+  "status": "published-transport-byte-readback",
+  "checkedAt": "2026-10-21T09:42:01.612Z",
   "version": "0.9.16",
   "appSourceCommit": "621980789256d8570d027d8ed36e6e73a0db2fa7",
   "bridgeCodeCommit": "9f4a66a72e457c76d0a9a113759afe3bd2e9dc4e",
@@ -11,7 +11,9 @@
     "repository": "ghost-raven1/neurocenter-assets",
     "tag": "bridge-v0.9.16",
     "url": "https://github.com/ghost-raven1/neurocenter-assets/releases/tag/bridge-v0.9.16",
-    "targetCommit": null
+    "targetCommit": "af07a391b601cc4253be8c67c6df889dd2af7c1a",
+    "id": 419381686,
+    "publishedAt": "2026-10-21T09:40:44Z"
   },
   "descriptor": {
     "sha256": "2b6236ca8ce5f125a74cbf7c6a2657a86d5cd6a9772815fc75a1e30bfddc7034",
@@ -127,7 +129,57 @@
       "sha256": "2b6236ca8ce5f125a74cbf7c6a2657a86d5cd6a9772815fc75a1e30bfddc7034"
     }
   ],
-  "httpsReadback": [],
+  "httpsReadback": [
+    {
+      "name": "neurocenter-asset-sync-darwin-arm64-0.9.16.tgz",
+      "url": "https://github.com/ghost-raven1/neurocenter-assets/releases/download/bridge-v0.9.16/neurocenter-asset-sync-darwin-arm64-0.9.16.tgz",
+      "bytes": 123098360,
+      "sha256": "229a3d175cdd4f5d313d6fd3d6ed17a3cab313853d3016fbb0d541d9e415426f",
+      "httpsReadback": true
+    },
+    {
+      "name": "neurocenter-asset-sync-darwin-arm64-0.9.16.tgz.json",
+      "url": "https://github.com/ghost-raven1/neurocenter-assets/releases/download/bridge-v0.9.16/neurocenter-asset-sync-darwin-arm64-0.9.16.tgz.json",
+      "bytes": 454,
+      "sha256": "74a28632a23e780b2c9be309090a1eea194ce99fc49d32cf0d99795497ad1212",
+      "httpsReadback": true
+    },
+    {
+      "name": "neurocenter-asset-sync-darwin-arm64-0.9.16.tgz.sha256",
+      "url": "https://github.com/ghost-raven1/neurocenter-assets/releases/download/bridge-v0.9.16/neurocenter-asset-sync-darwin-arm64-0.9.16.tgz.sha256",
+      "bytes": 65,
+      "sha256": "702fede51297598ba89f2dec651327af273d5f599b4a05e8abf0c33dc3614876",
+      "httpsReadback": true
+    },
+    {
+      "name": "neurocenter-asset-sync-linux-x64-0.9.16.tgz",
+      "url": "https://github.com/ghost-raven1/neurocenter-assets/releases/download/bridge-v0.9.16/neurocenter-asset-sync-linux-x64-0.9.16.tgz",
+      "bytes": 203252980,
+      "sha256": "3a4fb16a083b5e359f208447953da1487fdd92ca51e0c98cdde0d78d59d40f2a",
+      "httpsReadback": true
+    },
+    {
+      "name": "neurocenter-asset-sync-linux-x64-0.9.16.tgz.json",
+      "url": "https://github.com/ghost-raven1/neurocenter-assets/releases/download/bridge-v0.9.16/neurocenter-asset-sync-linux-x64-0.9.16.tgz.json",
+      "bytes": 451,
+      "sha256": "93852162171e3e15d029c95bd67246472382414070eed4e420b15fe4679c57cd",
+      "httpsReadback": true
+    },
+    {
+      "name": "neurocenter-asset-sync-linux-x64-0.9.16.tgz.sha256",
+      "url": "https://github.com/ghost-raven1/neurocenter-assets/releases/download/bridge-v0.9.16/neurocenter-asset-sync-linux-x64-0.9.16.tgz.sha256",
+      "bytes": 65,
+      "sha256": "34734082c63aff875ac74e9cd992cfccd31f81b886c750b74da4aaccdb63cf0e",
+      "httpsReadback": true
+    },
+    {
+      "name": "neurocenter-bridge-0.9.16.asset.json",
+      "url": "https://github.com/ghost-raven1/neurocenter-assets/releases/download/bridge-v0.9.16/neurocenter-bridge-0.9.16.asset.json",
+      "bytes": 2453,
+      "sha256": "2b6236ca8ce5f125a74cbf7c6a2657a86d5cd6a9772815fc75a1e30bfddc7034",
+      "httpsReadback": true
+    }
+  ],
   "platformReports": [
     {
       "checkedAt": "2026-10-21T09:34:50.774Z",
@@ -273,6 +325,25 @@
       "passed": 27,
       "failed": 0,
       "command": "node --test scripts/test/npm-build-isolation.test.mjs scripts/test/prepare-bridge-runtimes.test.mjs"
+    },
+    "assetContract": {
+      "passed": 91,
+      "failed": 0,
+      "skipped": 0
+    },
+    "nativeConsumer": {
+      "ok": true,
+      "descriptors": 39
+    },
+    "dockerNpmContamination": {
+      "contexts": [
+        "repository root",
+        "frontend"
+      ],
+      "uncachedBuildsPassed": 2,
+      "network": "none",
+      "actualNpmBinary": true,
+      "hostileHostAndProjectSettingsRejected": true
     }
   },
   "skippedBridgeTests": [
@@ -285,5 +356,11 @@
   "githubImmutable": false,
   "productionDeployed": false,
   "externalTargetAcceptance": false,
-  "boundary": "macOS ARM64 native; Linux x64 in a pinned Docker amd64 container under emulation on macOS ARM64. No other native platforms or model inference claimed. Source test results are local; CI and production deployment remain separate evidence."
+  "boundary": "macOS ARM64 native; Linux x64 in a pinned Docker amd64 container under emulation on macOS ARM64. No other native platforms or model inference claimed. Source test results are local; CI and production deployment remain separate evidence.",
+  "ci": {
+    "commit": "af07a391b601cc4253be8c67c6df889dd2af7c1a",
+    "conclusion": "success",
+    "url": "https://github.com/ghost-raven1/neurocenter-assets/actions/runs/39578586634",
+    "scope": "Metadata commit; later audit-only commit has a separate run."
+  }
 }
