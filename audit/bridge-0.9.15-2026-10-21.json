@@ -1,0 +1,167 @@
+{
+  "version": "0.9.15",
+  "appSourceCommit": "6c877f620f73ae41cd27896f706bd18cc9c62b39",
+  "sourceContractCommit": "2bcbdcbd77d003c078ce6357d64375de6ede1ff6",
+  "buildId": "26168129abdec506571cbc10baa4e18c65b3084b37d140052b7959ddf82cc176",
+  "release": "https://github.com/ghost-raven1/neurocenter-assets/releases/tag/bridge-v0.9.15",
+  "httpsReadback": [
+    {
+      "name": "neurocenter-asset-sync-darwin-arm64-0.9.15.tgz",
+      "url": "https://github.com/ghost-raven1/neurocenter-assets/releases/download/bridge-v0.9.15/neurocenter-asset-sync-darwin-arm64-0.9.15.tgz",
+      "bytes": 123090981,
+      "sha256": "f42687879a705c092aa5584bd118b5113b031253b15191f08ed8f1505d9c304a",
+      "httpsReadback": true
+    },
+    {
+      "name": "neurocenter-asset-sync-darwin-arm64-0.9.15.tgz.json",
+      "url": "https://github.com/ghost-raven1/neurocenter-assets/releases/download/bridge-v0.9.15/neurocenter-asset-sync-darwin-arm64-0.9.15.tgz.json",
+      "bytes": 454,
+      "sha256": "c792e351c31de67ec86c9b1b4a3486bea5307e254f161bdfd339a4270ae9d690",
+      "httpsReadback": true
+    },
+    {
+      "name": "neurocenter-asset-sync-darwin-arm64-0.9.15.tgz.sha256",
+      "url": "https://github.com/ghost-raven1/neurocenter-assets/releases/download/bridge-v0.9.15/neurocenter-asset-sync-darwin-arm64-0.9.15.tgz.sha256",
+      "bytes": 65,
+      "sha256": "0bff7408832b87c93b92a8daa6a1851559b7f3981c630373986d1e7b52560b97",
+      "httpsReadback": true
+    },
+    {
+      "name": "neurocenter-asset-sync-linux-x64-0.9.15.tgz",
+      "url": "https://github.com/ghost-raven1/neurocenter-assets/releases/download/bridge-v0.9.15/neurocenter-asset-sync-linux-x64-0.9.15.tgz",
+      "bytes": 203245494,
+      "sha256": "dc73f9dea48d2a004d311188642c3b79293e23ef14b026e4b4b85fcc2f49d32a",
+      "httpsReadback": true
+    },
+    {
+      "name": "neurocenter-asset-sync-linux-x64-0.9.15.tgz.json",
+      "url": "https://github.com/ghost-raven1/neurocenter-assets/releases/download/bridge-v0.9.15/neurocenter-asset-sync-linux-x64-0.9.15.tgz.json",
+      "bytes": 451,
+      "sha256": "2c367ef31cf548f21ec1d19a14c5d141b23ef6ff540fcc2a984d210e068f4dba",
+      "httpsReadback": true
+    },
+    {
+      "name": "neurocenter-asset-sync-linux-x64-0.9.15.tgz.sha256",
+      "url": "https://github.com/ghost-raven1/neurocenter-assets/releases/download/bridge-v0.9.15/neurocenter-asset-sync-linux-x64-0.9.15.tgz.sha256",
+      "bytes": 65,
+      "sha256": "97221e86eb49d09666bc0e4311cb288c1eefa7870d2aaaf2587f41f67787b80f",
+      "httpsReadback": true
+    },
+    {
+      "name": "neurocenter-bridge-0.9.15.asset.json",
+      "url": "https://github.com/ghost-raven1/neurocenter-assets/releases/download/bridge-v0.9.15/neurocenter-bridge-0.9.15.asset.json",
+      "bytes": 2453,
+      "sha256": "43bcf4a1a5561902990be83d90a0dc399a12eddc3ad8981d314729500968aff0",
+      "httpsReadback": true
+    }
+  ],
+  "platformReports": [
+    {
+      "target": "darwin-arm64",
+      "metadata": {
+        "version": "0.9.15",
+        "target": "darwin-arm64",
+        "nodeVersion": "24.22.0",
+        "buildId": "26168129abdec506571cbc10baa4e18c65b3084b37d140052b7959ddf82cc176",
+        "ragSupported": true,
+        "probeEngine": {
+          "version": "1.14.48",
+          "sha256": "a29407b32f28ff552539d6f4a1bbe6fafc5023472c7ff8ca2494525b9b0d921b",
+          "file": "bin/opencode-probe"
+        },
+        "sha256": "f42687879a705c092aa5584bd118b5113b031253b15191f08ed8f1505d9c304a",
+        "bytes": 123090981
+      },
+      "cases": [
+        "Контрольная сумма готового автономного архива совпадает с манифестом",
+        "Версии descriptor, package, runtime и dist/build совпадают до запуска MCP",
+        "Загруженная compiled-программа подтверждает RAG-профиль, полный снимок и buildId",
+        "Встроенный runtime запускается без Node и npm в PATH",
+        "Регистрация автономного MCP сохраняет JSONC, другие MCP и повторяется без изменений",
+        "Готовый runtime снимает полный LanceDB образ, сохраняя таблицы, схему, индекс и поиск",
+        "Compiled worker получает агенты через HTTP, переживает lost ACK и подтверждает native enable/disable/removal",
+        "Реальный stdio MCP загружается из готового пакета и сообщает протокол, сборку и LanceDB",
+        "В артефакте отсутствуют старые команды небезопасной записи"
+      ],
+      "agents": {
+        "capability": true,
+        "jobKind": true,
+        "httpJobs": 6,
+        "lostAckPreserved": true,
+        "staleInstanceRejected": true,
+        "manualAgentPreserved": true,
+        "nativeChecks": 4,
+        "engineVersion": "1.14.48",
+        "engineSha256": "a29407b32f28ff552539d6f4a1bbe6fafc5023472c7ff8ca2494525b9b0d921b",
+        "buildId": "26168129abdec506571cbc10baa4e18c65b3084b37d140052b7959ddf82cc176",
+        "requests": 40
+      },
+      "executor": {
+        "platform": "darwin",
+        "arch": "arm64",
+        "nodeVersion": "24.22.0",
+        "emulated": false
+      },
+      "temporaryProfileRemoved": true,
+      "realProfileChanged": false
+    },
+    {
+      "target": "linux-x64",
+      "metadata": {
+        "version": "0.9.15",
+        "target": "linux-x64",
+        "nodeVersion": "24.22.0",
+        "buildId": "26168129abdec506571cbc10baa4e18c65b3084b37d140052b7959ddf82cc176",
+        "ragSupported": true,
+        "probeEngine": {
+          "version": "1.14.48",
+          "sha256": "8732bd22e724fc19055e0e2800b763dbe9efc1e9ca004dc2f8836a9c124303b7",
+          "file": "bin/opencode-probe"
+        },
+        "sha256": "dc73f9dea48d2a004d311188642c3b79293e23ef14b026e4b4b85fcc2f49d32a",
+        "bytes": 203245494
+      },
+      "cases": [
+        "Контрольная сумма готового автономного архива совпадает с манифестом",
+        "Версии descriptor, package, runtime и dist/build совпадают до запуска MCP",
+        "Загруженная compiled-программа подтверждает RAG-профиль, полный снимок и buildId",
+        "Встроенный runtime запускается без Node и npm в PATH",
+        "Регистрация автономного MCP сохраняет JSONC, другие MCP и повторяется без изменений",
+        "Готовый runtime снимает полный LanceDB образ, сохраняя таблицы, схему, индекс и поиск",
+        "Compiled worker получает агенты через HTTP, переживает lost ACK и подтверждает native enable/disable/removal",
+        "Реальный stdio MCP загружается из готового пакета и сообщает протокол, сборку и LanceDB",
+        "В артефакте отсутствуют старые команды небезопасной записи"
+      ],
+      "agents": {
+        "capability": true,
+        "jobKind": true,
+        "httpJobs": 6,
+        "lostAckPreserved": true,
+        "staleInstanceRejected": true,
+        "manualAgentPreserved": true,
+        "nativeChecks": 4,
+        "engineVersion": "1.14.48",
+        "engineSha256": "8732bd22e724fc19055e0e2800b763dbe9efc1e9ca004dc2f8836a9c124303b7",
+        "buildId": "26168129abdec506571cbc10baa4e18c65b3084b37d140052b7959ddf82cc176",
+        "requests": 41
+      },
+      "executor": {
+        "platform": "linux",
+        "arch": "x64",
+        "nodeVersion": "24.22.0",
+        "emulated": true,
+        "hostPlatform": "darwin",
+        "hostArch": "arm64",
+        "containerPlatform": "linux/amd64",
+        "image": "node:24.22.0-bookworm-slim@sha256:a5f4366e834695d5f363b920c104953a535d3a9864d1bdf74566a0ebe01daee5",
+        "network": "none"
+      },
+      "temporaryProfileRemoved": true,
+      "realProfileChanged": false
+    }
+  ],
+  "githubImmutable": false,
+  "publicationPolicy": "new version, no overwrite, exact SHA and bytes",
+  "oldVersionsChanged": false,
+  "boundary": "macOS ARM64 native; Linux x64 in Docker amd64 emulation on macOS ARM64. No model inference or other native platforms claimed."
+}
