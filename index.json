@@ -78,7 +78,7 @@
       "version": "2.4.4-mcp.pack.9",
       "path": "assets/mcp-opencode-rag/2.4.4-mcp.pack.9/asset.json",
       "sha256": "74e1f28c4b843b22b24d4576a7ee53440440d570293930044368af594c16c89a",
-      "current": true
+      "current": false
     },
     {
       "id": "mcp-sequential-thinking",
@@ -166,7 +166,7 @@
       "version": "2.4.4-plugin.pack.9",
       "path": "assets/plugin-opencode-rag-plugin/2.4.4-plugin.pack.9/asset.json",
       "sha256": "3bb2d420442ec184cb04edb6d7b4a6f828ca2b18895dc357b7c5f31c518a03b0",
-      "current": true
+      "current": false
     },
     {
       "id": "plugin-opencode-snip",
@@ -318,6 +318,22 @@
       "version": "0.9.17",
       "path": "assets/neurocenter-bridge/0.9.17/asset.json",
       "sha256": "6d75e2dc713259466fa78e06c86c55ffc598944d9c8e9e3aa647c27b5b82a810",
+      "current": true
+    },
+    {
+      "id": "mcp-opencode-rag",
+      "kind": "mcp",
+      "version": "2.4.4-mcp.pack.11",
+      "path": "assets/mcp-opencode-rag/2.4.4-mcp.pack.11/asset.json",
+      "sha256": "2da42b9e71ad8c3958c23b0a92430c7031e5241b3046c347de37ad0089eac73a",
+      "current": true
+    },
+    {
+      "id": "plugin-opencode-rag-plugin",
+      "kind": "plugin",
+      "version": "2.4.4-plugin.pack.11",
+      "path": "assets/plugin-opencode-rag-plugin/2.4.4-plugin.pack.11/asset.json",
+      "sha256": "f3e79dfad6508ec2c52698f07fde91abc486cfd9e4eb731bcb2cdb813ba94fa9",
       "current": true
     }
   ],

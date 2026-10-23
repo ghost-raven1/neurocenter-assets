@@ -1,0 +1,314 @@
+{
+  "schemaVersion": 1,
+  "recipePath": "recipe.json",
+  "recipeSha256": "edb5c0d74777b5e894ba5b9e28d671d35aef4d8dca2e3cdf5a591eef9bbdb852",
+  "nodeVersion": "24.22.0",
+  "sources": [
+    {
+      "target": "darwin-arm64",
+      "upstream": {
+        "version": "2.4.4",
+        "archiveSha256": "6a21f4e39748394e56400364990f90ae0c9518cf6d16f62623fe664a951358af",
+        "compatibilityPatches": [
+          {
+            "id": "neurocenter-rag-web-ui",
+            "version": 2,
+            "files": [
+              "upstream/dist/web/server.js",
+              "upstream/dist/web/api.js",
+              "upstream/dist/web/ui/index.html",
+              "upstream/dist/web/ui/assets/index-DbXFrn53.js"
+            ],
+            "hostedEmbedding": {
+              "id": "neurocenter-rag-hosted-configuration",
+              "version": 1,
+              "file": "upstream/dist/core/runtime-overrides.js"
+            }
+          },
+          {
+            "id": "neurocenter-rag-managed-index",
+            "version": 1,
+            "file": "upstream/dist/indexer/pipeline.js"
+          }
+        ]
+      },
+      "entrypoint": "opencode-rag.mjs"
+    },
+    {
+      "target": "linux-arm64-glibc",
+      "upstream": {
+        "version": "2.4.4",
+        "archiveSha256": "6a21f4e39748394e56400364990f90ae0c9518cf6d16f62623fe664a951358af",
+        "compatibilityPatches": [
+          {
+            "id": "neurocenter-rag-web-ui",
+            "version": 2,
+            "files": [
+              "upstream/dist/web/server.js",
+              "upstream/dist/web/api.js",
+              "upstream/dist/web/ui/index.html",
+              "upstream/dist/web/ui/assets/index-DbXFrn53.js"
+            ],
+            "hostedEmbedding": {
+              "id": "neurocenter-rag-hosted-configuration",
+              "version": 1,
+              "file": "upstream/dist/core/runtime-overrides.js"
+            }
+          },
+          {
+            "id": "neurocenter-rag-managed-index",
+            "version": 1,
+            "file": "upstream/dist/indexer/pipeline.js"
+          }
+        ]
+      },
+      "entrypoint": "opencode-rag.mjs"
+    },
+    {
+      "target": "linux-arm64-musl",
+      "upstream": {
+        "version": "2.4.4",
+        "archiveSha256": "6a21f4e39748394e56400364990f90ae0c9518cf6d16f62623fe664a951358af",
+        "compatibilityPatches": [
+          {
+            "id": "neurocenter-rag-web-ui",
+            "version": 2,
+            "files": [
+              "upstream/dist/web/server.js",
+              "upstream/dist/web/api.js",
+              "upstream/dist/web/ui/index.html",
+              "upstream/dist/web/ui/assets/index-DbXFrn53.js"
+            ],
+            "hostedEmbedding": {
+              "id": "neurocenter-rag-hosted-configuration",
+              "version": 1,
+              "file": "upstream/dist/core/runtime-overrides.js"
+            }
+          },
+          {
+            "id": "neurocenter-rag-managed-index",
+            "version": 1,
+            "file": "upstream/dist/indexer/pipeline.js"
+          }
+        ]
+      },
+      "entrypoint": "opencode-rag.mjs"
+    },
+    {
+      "target": "linux-x64-glibc",
+      "upstream": {
+        "version": "2.4.4",
+        "archiveSha256": "6a21f4e39748394e56400364990f90ae0c9518cf6d16f62623fe664a951358af",
+        "compatibilityPatches": [
+          {
+            "id": "neurocenter-rag-web-ui",
+            "version": 2,
+            "files": [
+              "upstream/dist/web/server.js",
+              "upstream/dist/web/api.js",
+              "upstream/dist/web/ui/index.html",
+              "upstream/dist/web/ui/assets/index-DbXFrn53.js"
+            ],
+            "hostedEmbedding": {
+              "id": "neurocenter-rag-hosted-configuration",
+              "version": 1,
+              "file": "upstream/dist/core/runtime-overrides.js"
+            }
+          },
+          {
+            "id": "neurocenter-rag-managed-index",
+            "version": 1,
+            "file": "upstream/dist/indexer/pipeline.js"
+          }
+        ]
+      },
+      "entrypoint": "opencode-rag.mjs"
+    },
+    {
+      "target": "linux-x64-musl",
+      "upstream": {
+        "version": "2.4.4",
+        "archiveSha256": "6a21f4e39748394e56400364990f90ae0c9518cf6d16f62623fe664a951358af",
+        "compatibilityPatches": [
+          {
+            "id": "neurocenter-rag-web-ui",
+            "version": 2,
+            "files": [
+              "upstream/dist/web/server.js",
+              "upstream/dist/web/api.js",
+              "upstream/dist/web/ui/index.html",
+              "upstream/dist/web/ui/assets/index-DbXFrn53.js"
+            ],
+            "hostedEmbedding": {
+              "id": "neurocenter-rag-hosted-configuration",
+              "version": 1,
+              "file": "upstream/dist/core/runtime-overrides.js"
+            }
+          },
+          {
+            "id": "neurocenter-rag-managed-index",
+            "version": 1,
+            "file": "upstream/dist/indexer/pipeline.js"
+          }
+        ]
+      },
+      "entrypoint": "opencode-rag.mjs"
+    },
+    {
+      "target": "win32-arm64",
+      "upstream": {
+        "version": "2.4.4",
+        "archiveSha256": "6a21f4e39748394e56400364990f90ae0c9518cf6d16f62623fe664a951358af",
+        "compatibilityPatches": [
+          {
+            "id": "neurocenter-rag-web-ui",
+            "version": 2,
+            "files": [
+              "upstream/dist/web/server.js",
+              "upstream/dist/web/api.js",
+              "upstream/dist/web/ui/index.html",
+              "upstream/dist/web/ui/assets/index-DbXFrn53.js"
+            ],
+            "hostedEmbedding": {
+              "id": "neurocenter-rag-hosted-configuration",
+              "version": 1,
+              "file": "upstream/dist/core/runtime-overrides.js"
+            }
+          },
+          {
+            "id": "neurocenter-rag-managed-index",
+            "version": 1,
+            "file": "upstream/dist/indexer/pipeline.js"
+          }
+        ]
+      },
+      "entrypoint": "opencode-rag.mjs"
+    },
+    {
+      "target": "win32-x64",
+      "upstream": {
+        "version": "2.4.4",
+        "archiveSha256": "6a21f4e39748394e56400364990f90ae0c9518cf6d16f62623fe664a951358af",
+        "compatibilityPatches": [
+          {
+            "id": "neurocenter-rag-web-ui",
+            "version": 2,
+            "files": [
+              "upstream/dist/web/server.js",
+              "upstream/dist/web/api.js",
+              "upstream/dist/web/ui/index.html",
+              "upstream/dist/web/ui/assets/index-DbXFrn53.js"
+            ],
+            "hostedEmbedding": {
+              "id": "neurocenter-rag-hosted-configuration",
+              "version": 1,
+              "file": "upstream/dist/core/runtime-overrides.js"
+            }
+          },
+          {
+            "id": "neurocenter-rag-managed-index",
+            "version": 1,
+            "file": "upstream/dist/indexer/pipeline.js"
+          }
+        ]
+      },
+      "entrypoint": "opencode-rag.mjs"
+    }
+  ],
+  "locks": [
+    {
+      "target": "darwin-arm64",
+      "file": "lock-darwin-arm64.json",
+      "sha256": "7ab8f5afcfea6f6f6e0c43fa31c8d9029ca1967e2c603f2c95c62e720906e6ef"
+    },
+    {
+      "target": "linux-arm64-glibc",
+      "file": "lock-linux-arm64-glibc.json",
+      "sha256": "7ab8f5afcfea6f6f6e0c43fa31c8d9029ca1967e2c603f2c95c62e720906e6ef"
+    },
+    {
+      "target": "linux-arm64-musl",
+      "file": "lock-linux-arm64-musl.json",
+      "sha256": "7ab8f5afcfea6f6f6e0c43fa31c8d9029ca1967e2c603f2c95c62e720906e6ef"
+    },
+    {
+      "target": "linux-x64-glibc",
+      "file": "lock-linux-x64-glibc.json",
+      "sha256": "7ab8f5afcfea6f6f6e0c43fa31c8d9029ca1967e2c603f2c95c62e720906e6ef"
+    },
+    {
+      "target": "linux-x64-musl",
+      "file": "lock-linux-x64-musl.json",
+      "sha256": "7ab8f5afcfea6f6f6e0c43fa31c8d9029ca1967e2c603f2c95c62e720906e6ef"
+    },
+    {
+      "target": "win32-arm64",
+      "file": "lock-win32-arm64.json",
+      "sha256": "7ab8f5afcfea6f6f6e0c43fa31c8d9029ca1967e2c603f2c95c62e720906e6ef"
+    },
+    {
+      "target": "win32-x64",
+      "file": "lock-win32-x64.json",
+      "sha256": "7ab8f5afcfea6f6f6e0c43fa31c8d9029ca1967e2c603f2c95c62e720906e6ef"
+    }
+  ],
+  "artifacts": [
+    {
+      "target": "darwin-arm64",
+      "sha256": "f2adfcb1b48cff83be833a6a5794f2fe3031ca57cd9bd96f21f03bee04886c5f",
+      "compressedBytes": 98496024,
+      "unpackedBytes": 290777919,
+      "filesCount": 7843,
+      "entrypoint": "opencode-rag.mjs"
+    },
+    {
+      "target": "linux-arm64-glibc",
+      "sha256": "ccdbb3706dbc186afd199d04ccf8cfc62b40b4d08772e35474c04d3e85721eba",
+      "compressedBytes": 172171046,
+      "unpackedBytes": 475116232,
+      "filesCount": 7862,
+      "entrypoint": "opencode-rag.mjs"
+    },
+    {
+      "target": "linux-arm64-musl",
+      "sha256": "ccdbb3706dbc186afd199d04ccf8cfc62b40b4d08772e35474c04d3e85721eba",
+      "compressedBytes": 172171046,
+      "unpackedBytes": 475116232,
+      "filesCount": 7862,
+      "entrypoint": "opencode-rag.mjs"
+    },
+    {
+      "target": "linux-x64-glibc",
+      "sha256": "f2743223f89c00993a7b66b390aca34c82269d9fe311a2e8ae55899cf4dea3b5",
+      "compressedBytes": 178795916,
+      "unpackedBytes": 513951098,
+      "filesCount": 7862,
+      "entrypoint": "opencode-rag.mjs"
+    },
+    {
+      "target": "linux-x64-musl",
+      "sha256": "f2743223f89c00993a7b66b390aca34c82269d9fe311a2e8ae55899cf4dea3b5",
+      "compressedBytes": 178795916,
+      "unpackedBytes": 513951098,
+      "filesCount": 7862,
+      "entrypoint": "opencode-rag.mjs"
+    },
+    {
+      "target": "win32-arm64",
+      "sha256": "1de4130fc1e03cb3bf03aa76b0564af128d6e4bf0d6b383282f9ebe25b582452",
+      "compressedBytes": 103812583,
+      "unpackedBytes": 318691770,
+      "filesCount": 7839,
+      "entrypoint": "opencode-rag.mjs"
+    },
+    {
+      "target": "win32-x64",
+      "sha256": "005b808e304a7eeaaad021cdeffd139872fdb8aebbfed2f1732e5f5ee9b3dd03",
+      "compressedBytes": 109984777,
+      "unpackedBytes": 352246221,
+      "filesCount": 7840,
+      "entrypoint": "opencode-rag.mjs"
+    }
+  ],
+  "runtimeChecked": false
+}
