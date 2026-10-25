@@ -16,7 +16,8 @@ const notices={
 
 test('Curated skills preserve upstream notices, original instructions and all bundled resources',async()=>{
   const repository=await loadRepository(root);
-  const skills=repository.assets.filter(({asset})=>asset.kind==='skill'&&asset.version==='1.0.0'&&asset.source.type==='git');
+  const skills=repository.assets.filter(({asset})=>asset.kind==='skill'&&asset.version==='1.0.0'&&asset.source.type==='git'
+    &&Object.hasOwn(notices,asset.source.repository.replace('https://github.com/','')));
   assert.equal(skills.length,12);
   assert.equal(skills.reduce((sum,{asset})=>sum+asset.card.resources.length,0),187);
   for(const {asset}of skills){

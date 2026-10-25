@@ -6,7 +6,7 @@
       "version": "1.0.0",
       "path": "assets/agent-developer/1.0.0/asset.json",
       "sha256": "00b7f0e5804e3edde042cfb7cafd302c1abacdc11f205f658bb86eeaf1ee9007",
-      "current": true
+      "current": false
     },
     {
       "id": "agent-documenter",
@@ -14,7 +14,7 @@
       "version": "1.0.0",
       "path": "assets/agent-documenter/1.0.0/asset.json",
       "sha256": "f4d0041fe9108c98ea0535f64f61cfd9b40c3c915c14355aea2be89f7a0fada2",
-      "current": true
+      "current": false
     },
     {
       "id": "agent-planner",
@@ -22,7 +22,7 @@
       "version": "1.0.0",
       "path": "assets/agent-planner/1.0.0/asset.json",
       "sha256": "34cecf3143157dce2e659fd36943add7ff801c351f5317db3e683287af542fb6",
-      "current": true
+      "current": false
     },
     {
       "id": "agent-reviewer",
@@ -30,7 +30,7 @@
       "version": "1.0.0",
       "path": "assets/agent-reviewer/1.0.0/asset.json",
       "sha256": "cdac7f2e82af5584acfee65ca1a93dc7894091b7cb3ebfb82f8533554cb6009e",
-      "current": true
+      "current": false
     },
     {
       "id": "agent-tester",
@@ -38,7 +38,7 @@
       "version": "1.0.0",
       "path": "assets/agent-tester/1.0.0/asset.json",
       "sha256": "09fcb2fdffbcefc4446b29966abc87ae57b06a91a3b12a74317c95b51c395aad",
-      "current": true
+      "current": false
     },
     {
       "id": "mcp-fetch-mcp",
@@ -334,6 +334,70 @@
       "version": "2.4.4-plugin.pack.11",
       "path": "assets/plugin-opencode-rag-plugin/2.4.4-plugin.pack.11/asset.json",
       "sha256": "f3e79dfad6508ec2c52698f07fde91abc486cfd9e4eb731bcb2cdb813ba94fa9",
+      "current": true
+    },
+    {
+      "id": "skill-neurocenter-project-context",
+      "kind": "skill",
+      "version": "1.0.0",
+      "path": "assets/skill-neurocenter-project-context/1.0.0/asset.json",
+      "sha256": "33c0e8b622f0c439602de91aff5e0afecb8dcface21da52e317cdca28f3f12c7",
+      "current": true
+    },
+    {
+      "id": "skill-neurocenter-system-assistance",
+      "kind": "skill",
+      "version": "1.0.0",
+      "path": "assets/skill-neurocenter-system-assistance/1.0.0/asset.json",
+      "sha256": "f461efcc6e4a4e703cfa94971ed5806753e7df8f16e0181819e8707fee22b9d4",
+      "current": true
+    },
+    {
+      "id": "skill-neurocenter-project-learning",
+      "kind": "skill",
+      "version": "1.0.0",
+      "path": "assets/skill-neurocenter-project-learning/1.0.0/asset.json",
+      "sha256": "e11db4238f54908bd638b409df8d85af5a147f0576d6ad52f3c3689caf3c6cd9",
+      "current": true
+    },
+    {
+      "id": "agent-planner",
+      "kind": "agent",
+      "version": "1.1.0",
+      "path": "assets/agent-planner/1.1.0/asset.json",
+      "sha256": "a975f108aa5d1d5d91c733b5a6b9f1b61f41083a1e5e9b1c2bc0bb279dd380df",
+      "current": true
+    },
+    {
+      "id": "agent-developer",
+      "kind": "agent",
+      "version": "1.1.0",
+      "path": "assets/agent-developer/1.1.0/asset.json",
+      "sha256": "dead26971305dd00dd661cdd02c43bd729df7eb491d78b0de3b28bfe0fa59a53",
+      "current": true
+    },
+    {
+      "id": "agent-reviewer",
+      "kind": "agent",
+      "version": "1.1.0",
+      "path": "assets/agent-reviewer/1.1.0/asset.json",
+      "sha256": "ba81bca273c9fbfdc98c3147d8fc5507d857c2b1144c4bcffbc828e0ea959fe1",
+      "current": true
+    },
+    {
+      "id": "agent-tester",
+      "kind": "agent",
+      "version": "1.1.0",
+      "path": "assets/agent-tester/1.1.0/asset.json",
+      "sha256": "98dac69c7827e93c04a6dafb760cb6b1870361638c09ec342d720c3c9734500a",
+      "current": true
+    },
+    {
+      "id": "agent-documenter",
+      "kind": "agent",
+      "version": "1.1.0",
+      "path": "assets/agent-documenter/1.1.0/asset.json",
+      "sha256": "1cb1748c3ea5b2f9ed048b59d9ef992a99d6504d6aeb98defdd2fbcb4f46c846",
       "current": true
     }
   ],
