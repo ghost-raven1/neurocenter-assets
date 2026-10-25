@@ -1,0 +1,13 @@
+{
+  "sourceCommit": "5a82c73484ee7f2831db54309835e1305c0ff609",
+  "indexSha256": "c16495fb5b0c2151612fa6f83ba8ad2de31e575ffc8c843d85009631fcf19ce7",
+  "agents": {"count": 5, "version": "1.1.0"},
+  "skills": {"count": 3, "version": "1.0.0"},
+  "verification": {
+    "repositoryTests": {"passed": 96, "failed": 0, "skipped": 0},
+    "nativeAppValidators": "All 50 source descriptors, native skill package build/verify and agent normalization passed; no catalog writes, model calls or installation.",
+    "sourceArchive": "npm pack contained byte-identical five agent prompts and three SKILL.md files. The final archive hash is recorded after the final source commit.",
+    "historicalVersions": "Existing descriptor bytes and source identities retained; only current pointers moved."
+  },
+  "scope": "Source delivery and native package integrity. Runtime capabilities depend on the actual project runner. No claim of live MCP access, automatic knowledge activation, model inference or installation on a user computer."
+}
